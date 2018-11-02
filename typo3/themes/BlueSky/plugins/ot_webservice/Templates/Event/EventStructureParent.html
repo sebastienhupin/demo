@@ -1,0 +1,18 @@
+<f:layout name="General" />
+
+<f:section name="content">
+  <!--
+          =====================
+                  Templates/Event/EventStructureParent.html
+  -->
+  <f:if condition="{events}">
+    <f:then>
+      <f:for each="{events}" as="event" iteration="iterator">
+        <f:render partial="Event/List/Event" arguments="{event: event,settings:settings,iterator:iterator, isParent: 1}" />
+      </f:for>       
+    </f:then>
+    <f:else>
+      <p>Aucun événement</p>
+    </f:else>    
+  </f:if>
+</f:section>

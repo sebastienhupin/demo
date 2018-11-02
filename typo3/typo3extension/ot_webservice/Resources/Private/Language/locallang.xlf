@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="fr" datatype="plaintext" original="messages" date="2015-01-14T22:16:43Z" product-name="ot_webservice">
+    <header/>
+    <body>
+      <trans-unit id="search-start" xml:space="preserve">
+        <source>Rechercher</source>
+      </trans-unit>
+      <trans-unit id="member.role.president" xml:space="preserve">
+        <source>Président(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.honorary_president" xml:space="preserve">
+        <source>Président d'honneur</source>
+      </trans-unit>             
+      <trans-unit id="member.role.active_member_of_the_ca" xml:space="preserve">
+        <source>Membre actif du CA</source>
+      </trans-unit>
+      <trans-unit id="member.role.youth_representative" xml:space="preserve">
+        <source>Représentant des jeunes</source>
+      </trans-unit>
+      <trans-unit id="member.role.secretary" xml:space="preserve">
+        <source>Secrétaire</source>
+      </trans-unit>
+      <trans-unit id="member.role.assistant_secretary" xml:space="preserve">
+        <source>Secrétaire adjoint(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.treasurer" xml:space="preserve">
+        <source>Trésorier(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.assistant_treasurer" xml:space="preserve">
+        <source>Trésorier(e) adjoint(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.vice_president" xml:space="preserve">
+        <source>Vice président(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.member" xml:space="preserve">
+        <source>Adhérent</source>
+      </trans-unit>
+      <trans-unit id="member.role.not_a_member" xml:space="preserve">
+        <source>Non membre</source>
+      </trans-unit>
+      <trans-unit id="member.role.vice_president_of_honor" xml:space="preserve">
+        <source>Vice président(e) d'honneur</source>
+      </trans-unit>
+      <trans-unit id="member.role.honoraire_president" xml:space="preserve">
+        <source>Président(e) honoraire</source>
+      </trans-unit>
+      <trans-unit id="member.role.assistant_president" xml:space="preserve">
+        <source>Président(e) adjoint(e)</source>
+      </trans-unit>
+      <trans-unit id="member.role.active_member_of_the_co_opted_ca" xml:space="preserve">
+        <source>Membre actif du CA coopté</source>
+      </trans-unit>
+      <trans-unit id="member.role.board_member" xml:space="preserve">
+        <source>Membre du bureau</source>
+      </trans-unit>
+      <trans-unit id="member.role.honorary_member_of_the_ca" xml:space="preserve">
+        <source>Membre d'Honneur du CA</source>
+      </trans-unit>
+      <trans-unit id="member.role.honorary_member" xml:space="preserve">
+        <source>Membre d'Honneur</source>
+      </trans-unit>
+      <trans-unit id="member.instrument.no_detail" xml:space="preserve">
+        <source>pas de détail</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.accordion" xml:space="preserve">
+        <source>accordéon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bassoon" xml:space="preserve">
+        <source>basson</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bugle" xml:space="preserve">
+        <source>clairon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.clarinet" xml:space="preserve">
+        <source>clarinette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_wind" xml:space="preserve">
+        <source>contrebasse à vent</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.contrabassoon" xml:space="preserve">
+        <source>contrebasson</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.english_horn" xml:space="preserve">
+        <source>cor anglais</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.basset_horn" xml:space="preserve">
+        <source>cor de basset</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hunting_horn" xml:space="preserve">
+        <source>cor de chasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alphorn" xml:space="preserve">
+        <source>cor des alpes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.french_horn" xml:space="preserve">
+        <source>cor d'harmonie</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cornet_pistons" xml:space="preserve">
+        <source>cornet a pistons</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.euphonium" xml:space="preserve">
+        <source>euphonium</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flute" xml:space="preserve">
+        <source>flûte</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flute_a_bec" xml:space="preserve">
+        <source>flûte a bec</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flute_traversiere" xml:space="preserve">
+        <source>flûte traversière</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harmonium_organ" xml:space="preserve">
+        <source>harmonium (orgue)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.oboe" xml:space="preserve">
+        <source>hautbois</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.helicon" xml:space="preserve">
+        <source>hélicon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.piccolo" xml:space="preserve">
+        <source>piccolo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxophone" xml:space="preserve">
+        <source>saxophone soprano</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tenor_saxophone" xml:space="preserve">
+        <source>saxophone ténor</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alto_saxophone" xml:space="preserve">
+        <source>saxophone alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.baritone_saxophone" xml:space="preserve">
+        <source>saxophone baryton</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.sousaphone" xml:space="preserve">
+        <source>soubassophone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.trombone" xml:space="preserve">
+        <source>trombone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.trumpet" xml:space="preserve">
+        <source>trompette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tuba" xml:space="preserve">
+        <source>tuba</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxhorn" xml:space="preserve">
+        <source>saxhorn</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.percussion" xml:space="preserve">
+        <source>percussion</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.battery" xml:space="preserve">
+        <source>batterie</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.other_activity" xml:space="preserve">
+        <source>autre activité</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_clarinet" xml:space="preserve">
+        <source>clarinette contrebasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alto_clarinet" xml:space="preserve">
+        <source>clarinette alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.piccolo_clarinet" xml:space="preserve">
+        <source>clarinette piccolo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_flute" xml:space="preserve">
+        <source>flûte traversière basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alto_flute" xml:space="preserve">
+        <source>flûte bec alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.sopranino_recorder_flute" xml:space="preserve">
+        <source>flûte bec sopranino</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.soprano_flute" xml:space="preserve">
+        <source>flûte bec soprano</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.octobass_flute" xml:space="preserve">
+        <source>flûte octobasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pan_flute" xml:space="preserve">
+        <source>flûte pan</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flute_piccolo" xml:space="preserve">
+        <source>flûte piccolo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.shakuhachi_flute" xml:space="preserve">
+        <source>flûte shakuhachi</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.sarrusophone" xml:space="preserve">
+        <source>sarrusophone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.electric_organ" xml:space="preserve">
+        <source>orgue électrique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.piano" xml:space="preserve">
+        <source>piano</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harpsichord" xml:space="preserve">
+        <source>clavecin</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.organ" xml:space="preserve">
+        <source>orgue</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alto_has_strings" xml:space="preserve">
+        <source>alto a cordes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_has_strings" xml:space="preserve">
+        <source>contrebasse a cordes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.violin" xml:space="preserve">
+        <source>violon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cello" xml:space="preserve">
+        <source>violoncelle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.guitar" xml:space="preserve">
+        <source>guitare</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_guitar" xml:space="preserve">
+        <source>guitare basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.electric_guitar" xml:space="preserve">
+        <source>guitare électrique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harp" xml:space="preserve">
+        <source>harpe</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.celtic_harp" xml:space="preserve">
+        <source>harpe celtique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.natural_bugle" xml:space="preserve">
+        <source>bugle naturel</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.low_bugle" xml:space="preserve">
+        <source>clairon basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.natural_horn" xml:space="preserve">
+        <source>cor naturel</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxhorn_alto" xml:space="preserve">
+        <source>saxhorn alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxhorn_baritone" xml:space="preserve">
+        <source>saxhorn baryton</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.low_saxhorn" xml:space="preserve">
+        <source>saxhorn basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxhorn_bass" xml:space="preserve">
+        <source>saxhorn contrebasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxhorn_tenor" xml:space="preserve">
+        <source>saxhorn ténor</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.low_saxophone" xml:space="preserve">
+        <source>saxophone basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_saxophone" xml:space="preserve">
+        <source>saxophone contrebasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.trombone_alto" xml:space="preserve">
+        <source>trombone alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_trombone" xml:space="preserve">
+        <source>trombone basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.trompe" xml:space="preserve">
+        <source>trompe</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.low_trumpet" xml:space="preserve">
+        <source>trompette basse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cavalry_trumpet" xml:space="preserve">
+        <source>trompette de cavalerie</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.piccolo_trumpet" xml:space="preserve">
+        <source>trompette piccolo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tuba_bass" xml:space="preserve">
+        <source>tuba contrebasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tenor_tuba" xml:space="preserve">
+        <source>tuba ténor</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bagpipe" xml:space="preserve">
+        <source>cornemuse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harmonica" xml:space="preserve">
+        <source>harmonica</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.synthesizer" xml:space="preserve">
+        <source>synthétiseur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.clear_fund" xml:space="preserve">
+        <source>caisse-claire</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bell_a_cow" xml:space="preserve">
+        <source>cloche-a-vache</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.conga" xml:space="preserve">
+        <source>conga</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hit_cymbals" xml:space="preserve">
+        <source>cymbales frappées</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.suspended_cymbals" xml:space="preserve">
+        <source>cymbales suspendues</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.glockenspiel" xml:space="preserve">
+        <source>glockenspiel</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.marimba" xml:space="preserve">
+        <source>marimba</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.drum" xml:space="preserve">
+        <source>tambour</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.timpani" xml:space="preserve">
+        <source>timbales</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.vibraphone" xml:space="preserve">
+        <source>vibraphone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.xylophone" xml:space="preserve">
+        <source>xylophone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pocket_trumpet" xml:space="preserve">
+        <source>trompette de poche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mandocello" xml:space="preserve">
+        <source>mandoloncelle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mandole" xml:space="preserve">
+        <source>mandole</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mandolin" xml:space="preserve">
+        <source>mandoline</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.alto_voice" xml:space="preserve">
+        <source>contralto (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.soprano_voice" xml:space="preserve">
+        <source>soprano (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_voice" xml:space="preserve">
+        <source>basse (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tenor_voice" xml:space="preserve">
+        <source>ténor (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mezzo_soprano_voice" xml:space="preserve">
+        <source>mezzo soprano (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bearer" xml:space="preserve">
+        <source>porte-drapeau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_drum" xml:space="preserve">
+        <source>grosse caisse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.big_parade_fund" xml:space="preserve">
+        <source>grosse caisse de défilé</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbal_crash" xml:space="preserve">
+        <source>cymbale crash</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbal_ride" xml:space="preserve">
+        <source>cymbale ride</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbal_splash" xml:space="preserve">
+        <source>cymbale splash</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbal_china" xml:space="preserve">
+        <source>cymbale china</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.gong" xml:space="preserve">
+        <source>gong</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tambourine" xml:space="preserve">
+        <source>tambourin</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.basque_drum" xml:space="preserve">
+        <source>tambour de basque</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.anvil" xml:space="preserve">
+        <source>enclume</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.orchestra_bells" xml:space="preserve">
+        <source>cloches d'orchestre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chime" xml:space="preserve">
+        <source>carillon tubulaire</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tubular_bell" xml:space="preserve">
+        <source>cloche tubulaire</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.whistle" xml:space="preserve">
+        <source>sifflet</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.samba_whistle" xml:space="preserve">
+        <source>sifflet samba</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.whip" xml:space="preserve">
+        <source>fouet</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.guiro" xml:space="preserve">
+        <source>guiro</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.templeblock" xml:space="preserve">
+        <source>templeblock</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.shaker" xml:space="preserve">
+        <source>shaker</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.guiro_shaker" xml:space="preserve">
+        <source>guiro/shaker</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.triangle" xml:space="preserve">
+        <source>triangle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.polyblock" xml:space="preserve">
+        <source>polyblock</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tam_tam" xml:space="preserve">
+        <source>tam tam</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rainmaker" xml:space="preserve">
+        <source>bâton de pluie</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tree_has_bells" xml:space="preserve">
+        <source>arbre a clochettes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.claves" xml:space="preserve">
+        <source>claves</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wood_block" xml:space="preserve">
+        <source>wood-block</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bells" xml:space="preserve">
+        <source>grelots</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_drum_concert" xml:space="preserve">
+        <source>grosse caisse de concert</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bongos" xml:space="preserve">
+        <source>bongos</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rototom" xml:space="preserve">
+        <source>rototom</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.maracas" xml:space="preserve">
+        <source>maracas</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rattle" xml:space="preserve">
+        <source>crécelle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mermaid" xml:space="preserve">
+        <source>sirène</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.jazzo_flute" xml:space="preserve">
+        <source>jazzo-flûte</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.djembe" xml:space="preserve">
+        <source>djembé</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.didgeridoo" xml:space="preserve">
+        <source>didjéridoo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ophicleide" xml:space="preserve">
+        <source>ophicléïde</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.m?lophonium" xml:space="preserve">
+        <source>mélophonium</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cabassa" xml:space="preserve">
+        <source>cabassa</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.saxophone_sopranino" xml:space="preserve">
+        <source>saxophone sopranino</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wind_shimes" xml:space="preserve">
+        <source>wind shimes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chimes" xml:space="preserve">
+        <source>chimes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bar_chimes" xml:space="preserve">
+        <source>bar chimes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.river" xml:space="preserve">
+        <source>rivière</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymballettes" xml:space="preserve">
+        <source>cymballettes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.castanets" xml:space="preserve">
+        <source>castagnettes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bandon?on" xml:space="preserve">
+        <source>bandonéon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.banjo" xml:space="preserve">
+        <source>banjo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bassoon_french" xml:space="preserve">
+        <source>basson français</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.german_bassoon" xml:space="preserve">
+        <source>basson allemand</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.fagott" xml:space="preserve">
+        <source>fagott</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cor_dual_harmony" xml:space="preserve">
+        <source>cor d'harmonie double</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cor_triple_harmony" xml:space="preserve">
+        <source>cor d'harmonie triple</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.surdo" xml:space="preserve">
+        <source>surdo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.coloratura_soprano_voice" xml:space="preserve">
+        <source>soprano colorature (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.dramatic_soprano_voice" xml:space="preserve">
+        <source>soprano dramatique (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.soprano_child_voice" xml:space="preserve">
+        <source>soprano enfant (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_baritone_voice" xml:space="preserve">
+        <source>baryton basse (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.haute_against_voice" xml:space="preserve">
+        <source>haute contre (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mixed_voices_voice" xml:space="preserve">
+        <source>voix mixte (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.spoken_child_actor_voices_voice" xml:space="preserve">
+        <source>voix parlée acteur enfant (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.voices_spoken_woman_actor_voice" xml:space="preserve">
+        <source>voix parlée acteur femme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.spoken_man_actor_voices_voice" xml:space="preserve">
+        <source>voix parlée acteur homme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.woman_narrator_voice" xml:space="preserve">
+        <source>récitant femme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.narrator_man_voice" xml:space="preserve">
+        <source>récitant homme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.children_voices_voice" xml:space="preserve">
+        <source>voix enfant (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.voice_wife_voice" xml:space="preserve">
+        <source>voix femme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.human_voices_voice" xml:space="preserve">
+        <source>voix homme (voix)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flute_viola" xml:space="preserve">
+        <source>flûte traversière alto</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mao_assit?e_computer_music" xml:space="preserve">
+        <source>mao musique assitée par ordinateur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.old" xml:space="preserve">
+        <source>vielle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.washboard" xml:space="preserve">
+        <source>washboard</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.horn_has_pistons" xml:space="preserve">
+        <source>cornet a pistons</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.circassian" xml:space="preserve">
+        <source>circassien</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.comedian" xml:space="preserve">
+        <source>comédien</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.dancer" xml:space="preserve">
+        <source>danseur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.console" xml:space="preserve">
+        <source>pupitre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.podiums" xml:space="preserve">
+        <source>podiums</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.desk_lamp" xml:space="preserve">
+        <source>lampe de pupitre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.flight_case" xml:space="preserve">
+        <source>flight case</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mixer" xml:space="preserve">
+        <source>mélangeur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.microphone" xml:space="preserve">
+        <source>microphone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.players_recorder" xml:space="preserve">
+        <source>lecteurs/enregistreur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wireless_microphones" xml:space="preserve">
+        <source>microphones sans fil</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bags_suitcases" xml:space="preserve">
+        <source>sacs/valises</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.food" xml:space="preserve">
+        <source>alimentation</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pregnant" xml:space="preserve">
+        <source>enceinte</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.connectors" xml:space="preserve">
+        <source>connectique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.memory" xml:space="preserve">
+        <source>mémoire</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.amplifier" xml:space="preserve">
+        <source>amplificateur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.camera" xml:space="preserve">
+        <source>camera</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.screen" xml:space="preserve">
+        <source>ecran</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.stabilizer" xml:space="preserve">
+        <source>stabilisateur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.micro_gun" xml:space="preserve">
+        <source>micro canon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bulb" xml:space="preserve">
+        <source>ampoule</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pannaux" xml:space="preserve">
+        <source>pannaux</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mandarine" xml:space="preserve">
+        <source>mandarine</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ringlight" xml:space="preserve">
+        <source>ringlight</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.light_filter" xml:space="preserve">
+        <source>filtre lumière</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.patch_filter" xml:space="preserve">
+        <source>filtre correctif</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ring_juggling" xml:space="preserve">
+        <source>anneau (jonglerie)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ball_juggling" xml:space="preserve">
+        <source>balle (jonglerie)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mace_juggling" xml:space="preserve">
+        <source>massue (jonglerie)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.plates" xml:space="preserve">
+        <source>assiettes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.scarves" xml:space="preserve">
+        <source>foulards</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.devil_stick" xml:space="preserve">
+        <source>bâton du diable</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.torch" xml:space="preserve">
+        <source>torche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.diabolo" xml:space="preserve">
+        <source>diabolo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wick" xml:space="preserve">
+        <source>mèche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chain" xml:space="preserve">
+        <source>chaîne</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.stilt" xml:space="preserve">
+        <source>echasse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.american_roller" xml:space="preserve">
+        <source>rouleau américain</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.unicycle" xml:space="preserve">
+        <source>monocycle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.jacket" xml:space="preserve">
+        <source>blouson</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.neck" xml:space="preserve">
+        <source>tour de cou</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.shirt" xml:space="preserve">
+        <source>chemise</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.polo" xml:space="preserve">
+        <source>polo</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tie" xml:space="preserve">
+        <source>cravate</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bow_tie" xml:space="preserve">
+        <source>nœud papillon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.vest" xml:space="preserve">
+        <source>gilet</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.skirt" xml:space="preserve">
+        <source>jupe</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pants" xml:space="preserve">
+        <source>pantalon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.shoes" xml:space="preserve">
+        <source>chaussure</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.lavalli?re" xml:space="preserve">
+        <source>lavallière</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cap" xml:space="preserve">
+        <source>casquette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.gant" xml:space="preserve">
+        <source>gant</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.epaulette" xml:space="preserve">
+        <source>epaulette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hat" xml:space="preserve">
+        <source>chapeau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.belt" xml:space="preserve">
+        <source>ceinture</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wig" xml:space="preserve">
+        <source>perruque</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mask" xml:space="preserve">
+        <source>masque</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.plastic_clown_nose" xml:space="preserve">
+        <source>nez clown plastique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.blouse" xml:space="preserve">
+        <source>chemisette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.floor_mats" xml:space="preserve">
+        <source>tapis de sol</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.landing_mat" xml:space="preserve">
+        <source>tapis de réception</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.foldable_evolution_path" xml:space="preserve">
+        <source>piste d'évolution pliable</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.evolution_path_rollable" xml:space="preserve">
+        <source>piste d'évolution enroulable</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.modules" xml:space="preserve">
+        <source>modules</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.plinth" xml:space="preserve">
+        <source>plinth</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mini_trampoline" xml:space="preserve">
+        <source>mini-trampoline</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.trampoline" xml:space="preserve">
+        <source>trampoline</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.magnesia" xml:space="preserve">
+        <source>magnésie</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.resin" xml:space="preserve">
+        <source>résine</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.switches" xml:space="preserve">
+        <source>bascule</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.german_wheel" xml:space="preserve">
+        <source>roue allemande</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cyr_wheel" xml:space="preserve">
+        <source>roue cyr</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.russian_barre" xml:space="preserve">
+        <source>barre russe</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.balance_canne" xml:space="preserve">
+        <source>canne d'équilibre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.longe" xml:space="preserve">
+        <source>longe</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.parts" xml:space="preserve">
+        <source>pièces détachées</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.scarf" xml:space="preserve">
+        <source>foulard</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ring" xml:space="preserve">
+        <source>anneau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mace" xml:space="preserve">
+        <source>massue</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ball" xml:space="preserve">
+        <source>boule</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bollas" xml:space="preserve">
+        <source>bollas</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.plate" xml:space="preserve">
+        <source>assiette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.strap" xml:space="preserve">
+        <source>sangle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rope" xml:space="preserve">
+        <source>corde</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.fabric" xml:space="preserve">
+        <source>tissu</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hoop" xml:space="preserve">
+        <source>cerceau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.keystone" xml:space="preserve">
+        <source>trapèze</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mat" xml:space="preserve">
+        <source>mat</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.framework" xml:space="preserve">
+        <source>cadre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mini_flying" xml:space="preserve">
+        <source>mini-volant</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.grand_flying" xml:space="preserve">
+        <source>grand-volant</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.portico" xml:space="preserve">
+        <source>portique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.slings" xml:space="preserve">
+        <source>elingues</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.metal_ladder" xml:space="preserve">
+        <source>echelle métallique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hardware" xml:space="preserve">
+        <source>accastillage</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.connecting_elements_built_rigging" xml:space="preserve">
+        <source>eléments de liaison bâti/agrès</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.perch_giraffe" xml:space="preserve">
+        <source>perchoir (girafe)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.special_cycle" xml:space="preserve">
+        <source>cycle spécial</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wire_stretched" xml:space="preserve">
+        <source>fil tendu</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.self_fil" xml:space="preserve">
+        <source>fil autonome</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.slack" xml:space="preserve">
+        <source>slack</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rolla_bolla" xml:space="preserve">
+        <source>rolla bolla</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.scale" xml:space="preserve">
+        <source>echelle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.stilts" xml:space="preserve">
+        <source>echasses</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chair" xml:space="preserve">
+        <source>chaise</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.acrobatics_various_pedalgos" xml:space="preserve">
+        <source>acrobatics divers (pédalgos)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.clavicorde" xml:space="preserve">
+        <source>clavicorde</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbalum" xml:space="preserve">
+        <source>cymbalum</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.gardon" xml:space="preserve">
+        <source>gardon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hackbrett" xml:space="preserve">
+        <source>hackbrett</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pianoforte" xml:space="preserve">
+        <source>piano-forte</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.salterio" xml:space="preserve">
+        <source>salterio</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.string_tambourine" xml:space="preserve">
+        <source>tambourin à cordes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.dulcimer" xml:space="preserve">
+        <source>tympanon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.case_cases" xml:space="preserve">
+        <source>housse / étuis</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.straps_belts" xml:space="preserve">
+        <source>sangles / courroies</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.stools" xml:space="preserve">
+        <source>tabourets</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tuners" xml:space="preserve">
+        <source>accordeurs</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pickups" xml:space="preserve">
+        <source>micros</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.string" xml:space="preserve">
+        <source>cordes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.picks" xml:space="preserve">
+        <source>médiators</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.capo" xml:space="preserve">
+        <source>capodastre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bridge_tremolo" xml:space="preserve">
+        <source>chevalet / vibratos</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.slides" xml:space="preserve">
+        <source>slides</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.sticks" xml:space="preserve">
+        <source>baguettes</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.skins" xml:space="preserve">
+        <source>peaux</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bass_drum_pedal" xml:space="preserve">
+        <source>pedale grosse caisse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.headquarters" xml:space="preserve">
+        <source>siège</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.key" xml:space="preserve">
+        <source>clé</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.metronome" xml:space="preserve">
+        <source>métronome</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.table" xml:space="preserve">
+        <source>table</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.stool" xml:space="preserve">
+        <source>tabouret</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.board" xml:space="preserve">
+        <source>planche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.panel" xml:space="preserve">
+        <source>panneau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cable" xml:space="preserve">
+        <source>câble</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.rideau" xml:space="preserve">
+        <source>rideau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.carpet" xml:space="preserve">
+        <source>tapis</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.suitcase" xml:space="preserve">
+        <source>valise</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.miscellaneous" xml:space="preserve">
+        <source>divers</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.container" xml:space="preserve">
+        <source>conteneur</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.reed" xml:space="preserve">
+        <source>anche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bec" xml:space="preserve">
+        <source>bec</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mouthpiece" xml:space="preserve">
+        <source>embouchure</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cover_nose" xml:space="preserve">
+        <source>couvre-bec</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mute" xml:space="preserve">
+        <source>sourdine</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.pedal" xml:space="preserve">
+        <source>pédale</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bow" xml:space="preserve">
+        <source>archet</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.fire_stick_or_staff" xml:space="preserve">
+        <source>bâton de feu (ou staff)</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cymbal_stand" xml:space="preserve">
+        <source>pied de cymbale</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harness" xml:space="preserve">
+        <source>harnais</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.support" xml:space="preserve">
+        <source>support</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ligature" xml:space="preserve">
+        <source>ligature</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.fat_tube" xml:space="preserve">
+        <source>tube de graisse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.lyre" xml:space="preserve">
+        <source>lyre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.mailloche" xml:space="preserve">
+        <source>mailloche</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.votes" xml:space="preserve">
+        <source>voix</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cor" xml:space="preserve">
+        <source>cor</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.reception_mat" xml:space="preserve">
+        <source>tapis de réception</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.evolution_track" xml:space="preserve">
+        <source>piste d’évolution</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ground_sheet" xml:space="preserve">
+        <source>tapis de sol</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.elingues" xml:space="preserve">
+        <source>elingues</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.link_element" xml:space="preserve">
+        <source>eléments de liaison</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.bati_agres" xml:space="preserve">
+        <source>bâti agrès</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.apron" xml:space="preserve">
+        <source>tablier</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.windbreaker" xml:space="preserve">
+        <source>coupe-vent</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.raincoat" xml:space="preserve">
+        <source>imperméable</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.beret" xml:space="preserve">
+        <source>béret</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.kepi" xml:space="preserve">
+        <source>képi</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.calot" xml:space="preserve">
+        <source>calot</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.giberne" xml:space="preserve">
+        <source>giberne</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tee_shirt" xml:space="preserve">
+        <source>tee-shirt</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.sweat_shirt" xml:space="preserve">
+        <source>sweat-shirt</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.djing" xml:space="preserve">
+        <source>djing</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.appeau" xml:space="preserve">
+        <source>appeau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.boomwhacker" xml:space="preserve">
+        <source>boomwhacker</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.carillon" xml:space="preserve">
+        <source>carillon</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.caxixi" xml:space="preserve">
+        <source>caxixi</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chenille" xml:space="preserve">
+        <source>chenille</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chocalho_ganz" xml:space="preserve">
+        <source>chocalho ganza</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.hand_bell" xml:space="preserve">
+        <source>cloche à main</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.brazil_bell" xml:space="preserve">
+        <source>cloche brésilienne</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.diatonic_bell" xml:space="preserve">
+        <source>cloche diatonique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cup_zik" xml:space="preserve">
+        <source>cup zik</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.slide_flute" xml:space="preserve">
+        <source>flûte à coulisse</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.kalimba" xml:space="preserve">
+        <source>kalimba</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.melodica" xml:space="preserve">
+        <source>mélodica</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.metallophone" xml:space="preserve">
+        <source>métallophone</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ocarina" xml:space="preserve">
+        <source>ocarina</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.octoblock" xml:space="preserve">
+        <source>octoblock</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.shekere" xml:space="preserve">
+        <source>shékéré</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.water_drum" xml:space="preserve">
+        <source>tambour d'eau</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.ocean_drum" xml:space="preserve">
+        <source>tambours d'océan</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tan_tan" xml:space="preserve">
+        <source>tan tan</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.thunder_pipe" xml:space="preserve">
+        <source>tube tonnerre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.wah_wah_pipe" xml:space="preserve">
+        <source>tube wah wah</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.reasoning_pip" xml:space="preserve">
+        <source>tubes raisonnant</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.harmonie_pipe" xml:space="preserve">
+        <source>tuyau harmonique</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.vibraslap" xml:space="preserve">
+        <source>vibraslap</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.chinese_bowl" xml:space="preserve">
+        <source>bol chinois</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.methods" xml:space="preserve">
+        <source>méthode</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.book" xml:space="preserve">
+        <source>livre</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.magazine" xml:space="preserve">
+        <source>magazine</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.cd" xml:space="preserve">
+        <source>cd</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.vinyles" xml:space="preserve">
+        <source>vinyle</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.tape" xml:space="preserve">
+        <source>cassette</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.dvd" xml:space="preserve">
+        <source>dvd</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.blu_ray" xml:space="preserve">
+        <source>blu-ray</source>
+      </trans-unit>            
+      <trans-unit id="member.instrument.numeric_files" xml:space="preserve">
+        <source>fichier numérique</source>
+      </trans-unit>         
+    </body>
+  </file>
+</xliff>

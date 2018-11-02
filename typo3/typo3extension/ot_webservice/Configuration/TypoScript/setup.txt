@@ -1,0 +1,114 @@
+plugin.tx_otwebservice {
+    features.rewrittenPropertyMapper = 1
+    mvc.callDefaultActionIfActionCantBeResolved = 1
+	view {
+		templateRootPaths.5 = {$plugin.tx_otwebservice.view.templateRootPath}
+		partialRootPaths.5 = {$plugin.tx_otwebservice.view.partialRootPath}
+		layoutRootPaths.5 = {$plugin.tx_otwebservice.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_otwebservice.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+
+    settings {
+        structure {
+            typeNum = {$plugin.tx_otwebservice.settings.structure.typeNum}
+        }
+    }
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ot_webservice/Configuration/TypoScript/widgets.ts">
+
+// PAGE object for Ajax call:
+opentalentStructureSearchResultAjaxResponse = PAGE
+opentalentStructureSearchResultAjaxResponse {
+    typeNum = {$plugin.tx_otwebservice.settings.structure.typeNum}
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-type:application/html
+        xhtml_cleaning = 0
+        debug = 0
+        no_cache = 1
+        admPanel = 0
+    }
+ 
+    10 < plugin.tx_otwebservice.widgets.structureSearchResult
+}
+
+opentalentEventSearchResultAjaxResponse = PAGE
+opentalentEventSearchResultAjaxResponse {
+    typeNum = {$plugin.tx_otwebservice.settings.event.typeNum}
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-type:application/html
+        xhtml_cleaning = 0
+        debug = 0
+        no_cache = 1
+        admPanel = 0
+    }
+ 
+    10 < plugin.tx_otwebservice.widgets.eventSearchResult
+}
+
+# some default css
+#plugin.tx_otwebservice._CSS_DEFAULT_STYLE (
+#	textarea.f3-form-error {
+#		background-color:#FF9F9F;
+#		border: 1px #FF0000 solid;
+#	}
+#
+#	input.f3-form-error {
+#		background-color:#FF9F9F;
+#		border: 1px #FF0000 solid;
+#	}
+#
+#	.tx-ot-webservice table {
+#		border-collapse:separate;
+#		border-spacing:10px;
+#	}
+#
+#	.tx-ot-webservice table th {
+#		font-weight:bold;
+#	}
+#
+#	.tx-ot-webservice table td {
+#		vertical-align:top;
+#	}
+#
+#	.typo3-messages .message-error {
+#		color:red;
+#	}
+#
+#	.typo3-messages .message-ok {
+#		color:green;
+#	}
+#
+#)
+
+
+plugin.tx_otwebservice.jsInline {
+
+    1000 = TEXT
+    1000.value = define('typeNum', function () {
+    1001 = TEXT
+    1001.value = return {
+    1002 = TEXT
+    1002.stdWrap.dataWrap = "structure": {$plugin.tx_otwebservice.settings.structure.typeNum},
+    1003 = TEXT
+    1003.stdWrap.dataWrap = "structureRealurl": {$plugin.tx_otwebservice.settings.structure.realurl},
+    1004 = TEXT
+    1004.stdWrap.dataWrap = "event": {$plugin.tx_otwebservice.settings.event.typeNum},
+    1005 = TEXT
+    1005.stdWrap.dataWrap = "eventRealurl": {$plugin.tx_otwebservice.settings.event.realurl}
+    1006 = TEXT
+    1006.value = };
+    1007 = TEXT
+    1007.value = });
+
+}

@@ -1,0 +1,148 @@
+
+renderingOptions:  
+  submitButtonLabel: Envoyer
+type: Form
+identifier: ThemeGalleryContact
+label: Contact
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Demande d''information'
+      recipientAddress: 
+      recipientName: ''
+      senderAddress: no_reply@opentalent.fr
+      senderName: ''
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Bonjour / Nous avons pris en compte votre demande.'
+      recipientAddress: '{text-7}'
+      recipientName: '{text-2}  {text-1}'
+      senderAddress: no_response@opentaent.fr
+      senderName: ''
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'false'
+    identifier: EmailToSender
+  -
+    options:
+      pageUid: 0
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Ecrivez-nous !
+    renderables:
+      -
+        properties:
+          options:
+            madame: Madame
+            monsieur: Monsieur
+          fluidAdditionalAttributes:
+            required: required
+        type: SingleSelect
+        identifier: singleselect-1
+        label: Titre
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Prénom
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: Nom
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-3
+        label: Adresse
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-4
+        label: 'Code postal'
+        validators:
+          -
+            identifier: Integer
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-5
+        label: Ville
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-6
+        label: Pays
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-7
+        label: 'Adresse email'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-8
+        label: Téléphone
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-9
+        label: Sujet
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Message
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

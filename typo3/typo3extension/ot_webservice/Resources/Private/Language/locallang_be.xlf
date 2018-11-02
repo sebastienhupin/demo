@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="fr" datatype="plaintext" original="messages" date="2015-01-14T22:16:43Z" product-name="ot_webservice">
+    <header/>
+    <body>
+      <trans-unit id="flexforms_tab.settings" xml:space="preserve">
+        <source>Paramètres</source>
+      </trans-unit>
+      
+      <trans-unit id="flexforms_tab.geolocalisation" xml:space="preserve">
+        <source>Géolocalisation</source>
+      </trans-unit>
+
+      <trans-unit id="flexforms_general.mode" xml:space="preserve">
+        <source>Quel action ?</source>
+      </trans-unit>
+      
+      <trans-unit id="flexforms_general.setting.geolocalisation" xml:space="preserve">
+        <source>Utiliser la Géolocalisation ?</source>
+      </trans-unit>      
+
+      <trans-unit id="flexforms_general.setting.geolocalisation.latitude" xml:space="preserve">
+        <source>Latitude par défaut</source>
+      </trans-unit> 
+
+      <trans-unit id="flexforms_general.setting.geolocalisation.longitude" xml:space="preserve">
+        <source>Longitude par défaut</source>
+      </trans-unit> 
+
+      <trans-unit id="flexforms_general.setting.filter" xml:space="preserve">
+        <source>Afficher les boutons de filtres de catégories ?</source>
+      </trans-unit>
+       
+      <trans-unit id="flexforms_general.setting.showInDirectory" xml:space="preserve">
+        <source>Afficher que les structures qui ont accepté d'être dans l'annuaire ?</source>
+      </trans-unit>
+       
+      <trans-unit id="flexforms_general.setting.showmap" xml:space="preserve">
+        <source>Afficher les résutats sur une carte ?</source>
+      </trans-unit>
+
+      <trans-unit id="flexforms_general.mode.event_list" xml:space="preserve">
+        <source>Vue liste pour les événements</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_listOnly" xml:space="preserve">
+        <source>Vue liste (sans action sur le detail d'un événement)</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_detail" xml:space="preserve">
+        <source>Vue détaillé d'un événement</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_searchform" xml:space="preserve">
+        <source>Formulaire de recherche d'événements</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_searchresult-detail" xml:space="preserve">
+        <source>Résultat de la recherche d'événements et détail</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_top" xml:space="preserve">
+        <source>Les événements à la Une</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_last" xml:space="preserve">
+        <source>Les derniers événements</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_structure" xml:space="preserve">
+        <source>Les derniers événements de la structure</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_structure_children" xml:space="preserve">
+        <source>Les derniers événements des structures enfants</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.event_structure_parent" xml:space="preserve">
+        <source>Les derniers événements des structures parentes</source>
+      </trans-unit>
+           
+      <trans-unit id="flexforms_general.mode.event_googlemap" xml:space="preserve">
+        <source>Affiche une carte avec les événements présent dans votre page</source>
+      </trans-unit>            
+                                    
+      <trans-unit id="flexforms_general.mode.structure_detail" xml:space="preserve">
+        <source>Vue détaillé d'une structure</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.structure_searchform" xml:space="preserve">
+        <source>Formulaire de recherche d'une structure</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.structure_searchresult-detail" xml:space="preserve">
+        <source>Résultat de la recherche de structures et détail</source>
+      </trans-unit>
+
+      <trans-unit id="flexforms_general.mode.structure_searchMembers" xml:space="preserve">
+        <source>Affiche des membres de la structure</source>
+      </trans-unit>      
+      <trans-unit id="flexforms_general.mode.member_CA" xml:space="preserve">
+        <source>Affiche des membres du CA de la structure</source>
+      </trans-unit>
+
+      <trans-unit id="flexforms_general.mode.donor_listDonor" xml:space="preserve">
+        <source>Liste des partenaires de la structure</source>
+      </trans-unit>
+      <trans-unit id="flexforms_general.mode.donor_listDonorFede" xml:space="preserve">
+        <source>Liste des partenaires du réseau</source>
+      </trans-unit>                                                                                              
+    </body>
+  </file>
+</xliff>

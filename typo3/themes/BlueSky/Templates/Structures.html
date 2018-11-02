@@ -1,0 +1,39 @@
+{namespace otws=Opentalent\OtWebservice\ViewHelpers\Utility}
+<f:layout name="Home" />
+
+<f:section name="Content">
+  <!-- Main content
+      ================================================== -->
+
+  <div class="container" role="main">
+    <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb" />
+    <div class="row content">
+      <otws:IfHasAction pluginName="tx_otwebservice_pi1" action="detail">
+        <f:then>
+          <!-- Middle column -->
+          <div class="content-middle">
+            <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.structureDetail" />        
+          </div>            
+        </f:then>
+        <f:else>
+          <!-- Left column -->
+          <div class="content-left">
+            <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.structureSearchForm" data="{limit:300000}"/>
+          </div>
+          <!-- END OF Left column -->         
+          <!-- Middle column -->
+          <div class="content-middle">
+            <p class="saison-titre">Les structures</p>
+            <div class="col-md-8 content-middle">
+              <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.structureMap" />
+            </div>
+            <div class="col-md-4 ggmaps-list-results">  
+              <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.structureSearchResult" data="{limit:300000}"/>                 
+            </div>
+          </div>
+          <!-- END OF Middle column -->
+        </f:else>
+      </otws:IfHasAction>
+    </div> <!-- /row content -->
+  </div> <!-- /container -->
+</f:section>

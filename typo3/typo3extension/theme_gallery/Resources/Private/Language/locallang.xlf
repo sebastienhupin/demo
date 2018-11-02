@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-11-08T19:52:44Z" product-name="theme_gallery">
+    <header/>
+    <body>
+      <trans-unit id="theme_gallery.listing">
+        <source>Theme Gallery Listing</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.available">
+        <source>Available themes</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.not_available">
+        <source>Not Available, please choose the root page of your site</source>
+      </trans-unit>      
+      <trans-unit id="theme_gallery.activate">
+        <source>Activate</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.preview">
+        <source>Preview</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.detail">
+        <source>Detail</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.by">
+        <source>By</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.version">
+        <source>Version</source>
+      </trans-unit>      
+    </body>    
+  </file>   
+</xliff>

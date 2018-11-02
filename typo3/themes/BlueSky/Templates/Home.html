@@ -1,0 +1,87 @@
+{namespace otws=Opentalent\OtWebservice\ViewHelpers\Uri}
+
+<f:layout name="Home" />
+
+<f:section name="Content">
+  <!-- Main content
+      ================================================== -->
+
+  <div class="container" role="main">
+    <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb" />
+    <div class="row content">
+
+      <!-- Middle column -->
+      <div class="col-md-8 col-md-push-2 content-middle">
+        <f:format.html parseFuncTSPath="">{colContent}</f:format.html>
+      </div>
+
+      <!-- Left column -->
+      <div class="col-md-2 col-md-pull-8 content-left">
+
+        <!-- NEXT EVENTS' box -->
+        <div class="next-events grey-bg">
+          <div class="column-header">
+            <h2>Nos prochains évènements</h2>
+          </div>
+          <div class class="events-table">
+            <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventStructure" data="{limit : 5, orderBy:'name:DESC'}"/>
+          </div>
+          <f:cObject typoscriptObjectPath="lib.opentalent.event.link">Voir tous nos événements</f:cObject>
+        </div>
+        <p>&nbsp;</p>
+        <f:if condition="{settings.structure.is_network}==1">
+          <f:then>   
+            <div class="next-events-fede grey-bg">
+              <div class="column-header">
+                <h2>Evènements des structures</h2>
+              </div>
+              <div class class="events-table">
+                <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventStructureChildren" data="{limit : 5, orderBy:'name:DESC'}"/>
+              </div>
+              <f:cObject typoscriptObjectPath="lib.opentalent.page.structure.events.link">Voir tous les événements de nos structures</f:cObject>
+            </div>
+          </f:then>
+          <f:else>
+            <f:if condition="{settings.network.name}!='OUTOFNET'">
+              <f:then>                     
+                <!-- NEXT FEDE EVENTS' box -->
+                <div class="next-events-fede grey-bg">
+                  <div class="column-header">
+                    <h2>Prochains événements de notre réseau</h2>
+                  </div>
+                  <div class class="events-table">
+                    <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventStructureParent" data="{limit : 5, orderBy:'name:DESC'}"/>
+                  </div>
+                  <p><f:cObject typoscriptObjectPath="lib.sitetitle" /> est membre de : <f:cObject typoscriptObjectPath="lib.opentalent.parent.structure.name" />.<br />
+
+                  <f:cObject typoscriptObjectPath="lib.opentalent.parent.structure.link" >Visitez le site Web de notre fédération</f:cObject>
+                  </p>
+                </div>
+              </f:then>
+            </f:if>             
+          </f:else>
+        </f:if>
+        <f:format.html parseFuncTSPath="">{colLeft}</f:format.html>
+      </div>
+
+
+      <!-- Right column -->
+      <div class="col-md-2 content-right">
+        <!-- NEWS' box -->
+        <f:cObject typoscriptObjectPath="lib.tx_themegallery.widgets.listnews" />
+
+        <!-- PARTNERS WIDGET -->
+        <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.donors" data="{limit : 100}"/>
+        <p>&nbsp;</p>
+        <!-- PARTNERS NETWORK WIDGET -->  
+        <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.donorsFede" data="{limit : 100}"/>
+
+        <p>&nbsp;</p>
+        <f:format.html parseFuncTSPath="">{colRight}</f:format.html>
+      </div>
+      <!-- END OF Right column -->
+
+    </div> <!-- /row content -->
+
+  </div> <!-- /container -->
+</f:section>

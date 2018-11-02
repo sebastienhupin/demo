@@ -1,0 +1,19 @@
+<f:if condition="{events}">
+  <p>The Event controller index rendering</p>
+  <f:render partial="events" arguments="{events: events}" />
+
+</f:if>
+
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Event/SearchForm.html
+-->
+
+<f:section name="content">
+  <f:if condition="{events}">
+    <f:for each="{events}" as="eventItem" iteration="iterator">
+      <f:render partial="List/Item" arguments="{eventItem: eventItem,settings:settings,iterator:iterator}" />
+    </f:for>
+  </f:if>
+</f:section>

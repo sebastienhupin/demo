@@ -1,0 +1,135 @@
+<!-- Template general pour la page de login -->
+
+<!--###TEMPLATE_LOGIN###-->
+<div class="formulaires">
+  <!--###HEADER_VALID###-->
+  <h3>###STATUS_HEADER###</h3>
+  <!--###HEADER_VALID###-->
+
+  <!--###MESSAGE_VALID###-->
+  <p>###STATUS_MESSAGE###</p>
+  <!--###MESSAGE_VALID###-->
+
+  <!-- ###LOGIN_FORM### -->
+  <div class="connexion-form">
+    <form action="###ACTION_URI###" target="_top" method="post" onsubmit="###ON_SUBMIT###">
+      <div class="form-group">
+        <label for="user">###USERNAME_LABEL###</label>
+        <input type="text" class="form-control" id="user" name="user" value="" placeholder="Identifiant Opentalent"/>
+      </div>
+      <div class="form-group">
+        <label for="pass">###PASSWORD_LABEL###</label>
+        <input type="password" class="form-control" id="pass" name="pass" value="" placeholder="Mot de passe"/>
+      </div>
+
+      <!--###PERMALOGIN_VALID###-->
+      <label for="permalogin">###PERMALOGIN###</label>
+      <div class="form-group">
+        <input name="permalogin" value="0" type="hidden" ###PERMALOGIN_HIDDENFIELD_ATTRIBUTES### id="permaloginHiddenField" />
+        <input name="permalogin" value="1" type="checkbox" ###PERMALOGIN_CHECKBOX_ATTRIBUTES### id="permalogin"  onclick="document.getElementById('permaloginHiddenField').disabled = this.checked;" />
+      </div>
+      <!--###PERMALOGIN_VALID###-->
+
+      <button type="submit" name="submit" class="btn btn-primary">###LOGIN_LABEL###</button>
+      <div class="form-hidden">
+        <input type="hidden" name="logintype" value="login" />
+        <input type="hidden" name="pid" value="###STORAGE_PID###" />
+        <input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+        <input type="hidden" name="###PREFIXID###[noredirect]" value="###NOREDIRECT###" />
+      </div>
+      ###EXTRA_HIDDEN###
+    </form>
+  </div>
+  <div class="form-group link-forget">
+    <!--###FORGOTP_VALID###-->
+    <p>
+      <!--###FORGOT_PASSWORD_LINK###-->###FORGOT_PASSWORD###<!--###FORGOT_PASSWORD_LINK###-->
+      <!--- <a href="index.php?id=contact" title="Opens internal link in current window" class="internal-link">Email Oublié?</a>-->
+    </p>
+    <!--###FORGOTP_VALID###-->
+    
+  </div>  
+  <!-- ###LOGIN_FORM### -->
+</div>
+<!--###TEMPLATE_LOGIN###-->
+
+
+<!--###TEMPLATE_LOGOUT###-->
+<div class="formulaires">
+
+  <!--###HEADER_VALID###-->
+  <h3>###STATUS_HEADER###</h3>
+  <!--###HEADER_VALID###-->
+
+  <!--###MESSAGE_VALID###-->
+  <p>###STATUS_MESSAGE###</p>
+  <!--###MESSAGE_VALID###-->
+  <h3>###USERNAME_LABEL###</h3>
+  <p>###USERNAME###</p>
+
+  <div class="connexion-form">
+    <form action="###ACTION_URI###" target="_top" method="post">
+      <p><input type="submit" name="submit" value="###LOGOUT_LABEL###" class="btn btn-primary" /></p>
+      <input type="hidden" name="logintype" value="logout" />
+      <input type="hidden" name="pid" value="###STORAGE_PID###" />
+    </form>
+
+  </div>
+</div>
+<!--###TEMPLATE_LOGOUT###-->
+
+<!--###TEMPLATE_FORGOT###-->
+<div class="formulaires">
+  <h3>###STATUS_HEADER###</h3>
+  <p>###STATUS_MESSAGE###</p>
+
+  <!-- ###FORGOT_FORM### -->
+  <div class="connexion-form">
+    <form action="###ACTION_URI###" method="post">
+      <p><input type="hidden" name="tx_felogin_pi1[forgot_hash]" value="###FORGOTHASH###" /></p>
+      <h3><label class="top" for="tx_felogin_pi1-forgot-email">###DATA_LABEL###</label></h3>
+      <p><input type="text" name="###FORGOT_EMAIL###" id="tx_felogin_pi1-forgot-email" placeholder="Entrez votre adresse email"/></p>
+      <p><input type="submit" name="submit" value="###SEND_PASSWORD###" class="btn btn-primary" /></p>
+    </form>
+  </div>
+  <!-- ###FORGOT_FORM### -->
+  <div class="form-group">
+    <p>###BACKLINK_LOGIN###&nbsp;</p>
+  </div>
+</div>
+<!--###TEMPLATE_FORGOT###-->
+
+<!--###TEMPLATE_CHANGEPASSWORD###-->
+
+<!--<h3>###STATUS_HEADER###</h3>-->
+<h3>###STATUS_HEADER###</h3>
+<p>###STATUS_MESSAGE###</p>
+<!--<h3>###STATUS_HEADER###</h3>-->
+
+<!-- ###CHANGEPASSWORD_FORM### -->
+<form action="###ACTION_URI###" method="post">
+  <p><b><label for="tx_felogin_pi1-newpassword1">###NEWPASSWORD1_LABEL###</label></b></p>
+  <p><input type="password" name="###NEWPASSWORD1###" id="tx_felogin_pi1-newpassword1" /></p>
+  <p><b><label for="tx_felogin_pi1-newpassword2">###NEWPASSWORD2_LABEL###</label></b></p>
+  <p><input type="password" name="###NEWPASSWORD2###" id="tx_felogin_pi1-newpassword2" /></p>
+  <input type="submit" name="tx_felogin_pi1[changepasswordsubmit]" value="###SEND_PASSWORD###" class="btn btn-primary"/>
+</form>
+<!-- ###CHANGEPASSWORD_FORM### -->
+
+<!-- ###BACKLINK_LOGIN### -->
+<!--###TEMPLATE_CHANGEPASSWORD###-->
+
+<!--###TEMPLATE_ECHANGEPASSWORD###-->
+<!--<h3>###STATUS_HEADER###</h3>-->
+<h3>###STATUS_HEADER###</h3>
+<p>###STATUS_MESSAGE###</p>
+<!--<h3>###STATUS_HEADER###</h3>-->
+
+<!-- ###CHANGEPASSWORD_FORM### -->
+<h3>ERREUR</h3>
+<!-- ###CHANGEPASSWORD_FORM### -->
+
+<!-- ###BACKLINK_LOGIN### -->
+<!--###TEMPLATE_ECHANGEPASSWORD###-->
+
+<!-- C LA FIN DU FICHIER-->

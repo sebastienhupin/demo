@@ -1,0 +1,43 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Interrogation des webservices Opentalent ",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "fr",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "0.1"
+        },
+        "extensionKey": "ot_webservice",
+        "name": "Webservice",
+        "originalExtensionKey": "",
+        "persons": [{
+                "company": "Opentalent",
+                "email": "sebastien.hupin@2iopenservice.fr",
+                "name": "S\u00e9bastien hupin",
+                "role": "Developer"
+            }],
+        "plugins": [{
+                "actions": {
+                    "controllerActionCombinations": "Event => getEvent, listEvent, detailEvent",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "otwebserviceevent",
+                "name": "Event"
+            }],
+        "vendorName": "Opentalent"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2015-01-14 07:36",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

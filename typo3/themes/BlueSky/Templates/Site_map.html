@@ -1,0 +1,16 @@
+<f:layout name="Home" />
+
+<f:section name="Content">
+<!-- Main content
+    ================================================== -->
+    <div class="container" role="main">
+      <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb" />      
+      <div class="row content">
+        <h1><f:cObject typoscriptObjectPath="lib.sitetitle" /></h1>
+        <!-- Middle column -->
+        <div class="col-md-8 col-md-push-2 content-middle">
+          <f:cObject typoscriptObjectPath="lib.tx_themegallery.widgets.sitemap" />
+        </div>
+      </div> <!-- /row content -->
+    </div> <!-- /container -->
+</f:section>

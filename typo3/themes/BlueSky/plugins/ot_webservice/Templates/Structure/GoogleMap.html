@@ -1,0 +1,254 @@
+<f:layout name="General" />
+
+<f:section name="content">
+  <!--
+          =====================
+                  Templates/Structure/GoogleMap.html
+  -->
+
+  <article id="corps-ggmaps" class="corps-ggmaps">
+    <div id="google-map"></div>
+  </article>
+
+  <script type="text/javascript">
+    /**
+     * La carte Google
+     * @type google.maps.Map
+     */
+    var map = null;
+
+    /**
+     * La bounding zone
+     * @type google.maps.LatLngBounds
+     */
+    var map_bounds = null;
+
+    /**
+     * Listes des marqueurs
+     * @type Hash
+     */
+    var markers = {};
+
+    var refreshListThread = null;
+
+    // Center to France
+    var map_center = {
+      lat: 47.0000,
+      lng: 2.0000
+    };
+
+    /**
+     * Initialisation de la carte Google
+     */
+    function initializeGoogleMap() {
+      var mapOptions = {
+        center: map_center,
+        zoom: 5,
+        scrollwheel: false,
+        panControl: true,
+        panControlOptions: {
+          position: google.maps.ControlPosition.TOP_RIGHT
+        },
+        mapTypeControl: false,
+        zoomControl: true,
+        zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.SMALL,
+          position: google.maps.ControlPosition.TOP_RIGHT
+        },
+        streetViewControl: false
+      };
+
+      map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+      // Bounding zone
+      map_bounds = new google.maps.LatLngBounds();
+
+      // Envoi un événement comme quoi la carte est chargé
+      jQuery(document).trigger('mapLoad');
+
+      google.maps.event.addListener(map, 'bounds_changed', function() {
+        if (refreshListThread) {
+          window.clearTimeout(refreshListThread);
+        }
+        refreshListThread = setTimeout(refreshList, 200);
+      });
+
+    }
+
+    function refreshList() {
+      for (var key in markers) {
+        var marker = markers[key];
+        if (map.getBounds().contains(marker.position)) {
+          // Make the list item visible.
+          for (var $elem in marker.$elems) {
+            //jQuery('.structure-item[data-id="' + marker.ids[id] + '"]').show();
+            marker.$elems[$elem].show();
+          }
+        } else {
+          // Make the list item hidden.
+          for (var $elem in marker.$elems) {
+            //jQuery('.structure-item[data-id="' + marker.ids[id] + '"]').hide();
+            marker.$elems[$elem].hide();
+          }
+        }
+      }
+    }
+
+    function zoomToDistance(map) {
+      var bounds = map.getBounds();
+
+      var p1 = bounds.getCenter();
+      var p2 = bounds.getNorthEast();
+
+      var R = 6371; // Radius of the Earth in km
+      var dLat = (p2.lat() - p1.lat()) * Math.PI / 180;
+      var dLon = (p2.lng() - p1.lng()) * Math.PI / 180;
+      var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(p1.lat() * Math.PI / 180) * Math.cos(p2.lat() * Math.PI / 180) *
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      var d = R * c;
+      return d;
+    }
+
+    function debugDrawCircle(theMap, theRadius) {
+      var optionsCircle = {
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FF0000',
+        fillOpacity: 0.35,
+        map: theMap,
+        center: theMap.getCenter(),
+        radius: theRadius
+      };
+      var myCircle = new google.maps.Circle(optionsCircle);
+    }
+
+    function showStructuresOntoTheMap() {
+
+      jQuery('.infowindow').each(function() {
+        var data = eval("(function(){return " + jQuery(this).data('geolocation') + ";})()");
+
+        if ((typeof data === 'undefined') || (!data.lat && !data.lng) || (data.lat == 0 && data.lng == 0)) {
+          return;
+        }
+
+        var id = jQuery(this).data('id');
+
+        // Construction d'une clef basé sur la latitude et longitude,
+        // cette clef permetra de ne pas avoir de marqueurs superposé les un sur les autres.
+        var key = '$' + data.lat + ':' + data.lng + '$';
+
+        if (!(key in markers)) {
+          // On récupère les infos à afficher lors du click sur un marqueur
+          var contentInfowindow = jQuery('.infowindow[data-id="' + id + '"]').html();
+          markers[key] = {
+            marker: null,
+            content: contentInfowindow,
+            position: new google.maps.LatLng(data.lat, data.lng),
+            $elems: [jQuery('.structure-item[data-id="' + id + '"]')],
+            ids: [id],
+            onTheMap: false
+          };
+        }
+        else {
+          var ids = markers[key].ids;
+          // Controle qu'un élément ne sera pas en double dans la fenêtre d'information d'un marqueur
+          if (jQuery.inArray(id, ids)) {
+            var contentInfowindow = jQuery('.infowindow[data-id="' + id + '"]').html();
+            markers[key].$elems.push(jQuery('.structure-item[data-id="' + id + '"]'));
+            markers[key].ids.push(id);
+            markers[key].content += contentInfowindow;
+          }
+        }
+      });
+
+      // Ajout des marqueurs sur la carte
+      addMarkersToMap();
+    }
+
+    /**
+     *  Ajoute l'ensemble des marqueurs sur la carte
+     *  @See : Voir la documentation Google map Api Marker
+     *  @Url : https://developers.google.com/maps/documentation/javascript/markers
+     */
+    function addMarkersToMap() {
+
+      var infowindow = new google.maps.InfoWindow();
+      var mks = [];
+
+      // Ajout des marqueurs sur la carte.
+      for (var key in markers) {
+        var marker = markers[key];
+        // Si un marqueur est déjà présent au même endroit on le retire
+        // Cela peut se produire si plusieurs widget utilise cette fonction
+        if (marker.onTheMap) {
+          marker.marker.setMap(null);
+        }
+
+        var mk = new google.maps.Marker({
+          ///map: map,
+          //animation: google.maps.Animation.DROP,
+          position: marker.position
+        });
+        marker.marker = mk;
+        mks.push(mk);
+
+        google.maps.event.addListener(mk, 'click', (function(marker, key) {
+          return function() {
+            infowindow.setContent(markers[key].content);
+            infowindow.open(map, marker);
+          };
+        })(mk, key));
+
+        // Etend la zone de la carte au marqueur qui vient d'être ajouté
+        map_bounds.extend(marker.marker.position);
+        // Indique que le marqueur a été positionné sur la carte
+        marker.onTheMap = true;
+
+      }
+      // The clustering markers
+      var markerCluster = new MarkerClusterer(map, mks);
+
+      // This is needed to set the zoom after fitbounds, 
+      google.maps.event.addListener(map, 'zoom_changed', function() {
+        zoomChangeBoundsListener =
+                google.maps.event.addListener(map, 'bounds_changed', function(event) {
+                  if (this.getZoom() > 17 && this.initialZoom == true) {
+                    // Change max/min zoom here
+                    this.setZoom(17);
+                    this.initialZoom = false;
+                  }
+                  google.maps.event.removeListener(zoomChangeBoundsListener);
+                });
+      });
+
+      map.initialZoom = true;
+
+      if (mks.length > 0) {
+        // Centre la carte sur tous les marqueurs.
+        map.fitBounds(map_bounds);
+      }
+    }
+
+    jQuery(document).one('mapLoad', function(event) {
+      showStructuresOntoTheMap();
+    });
+
+    jQuery(document).on('StructureItemsLoaded', function(event) {
+      showStructuresOntoTheMap();
+    });
+
+    jQuery(document).ready(function() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDV5xPWCH7Yj4t3v1xV45TzYPLDIo_Hfns&' +
+              'callback=initializeGoogleMap';
+      document.body.appendChild(script);
+    });
+
+  </script>
+
+
+</f:section>

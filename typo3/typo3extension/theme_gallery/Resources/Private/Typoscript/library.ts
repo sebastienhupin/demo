@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_gallery/Resources/Private/Typoscript/Library" extensions="ts">

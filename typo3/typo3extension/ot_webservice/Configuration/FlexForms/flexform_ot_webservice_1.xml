@@ -1,0 +1,208 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <sheets>
+    <General>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_tab.settings</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <!-- View -->
+          <switchableControllerActions>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode</label>
+              <onChange>reload</onChange>
+              <config>
+                <type>select</type>
+                
+                <items>
+                  <numIndex index="1">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_list</numIndex>
+                    <numIndex index="1">Event->list</numIndex>
+                  </numIndex>
+                  <numIndex index="2">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_detail</numIndex>
+                    <numIndex index="1">Event->detail</numIndex>
+                  </numIndex>
+                  <numIndex index="3">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_searchform</numIndex>
+                    <numIndex index="1">Event->searchForm</numIndex>
+                  </numIndex>
+                  <numIndex index="4">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_searchresult-detail</numIndex>
+                    <numIndex index="1">Event->searchResult;Event->detail</numIndex>
+                  </numIndex>
+                  <numIndex index="5">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_top</numIndex>
+                    <numIndex index="1">Event->top</numIndex>
+                  </numIndex>
+                  <numIndex index="6">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_last</numIndex>
+                    <numIndex index="1">Event->last</numIndex>
+                  </numIndex>
+                  <numIndex index="7">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_googlemap</numIndex>
+                    <numIndex index="1">Event->googleMap</numIndex>
+                  </numIndex>
+                  <numIndex index="8">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_structure</numIndex>
+                    <numIndex index="1">Event->eventStructure</numIndex>
+                  </numIndex>                  
+                  <numIndex index="9">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_structure_children</numIndex>
+                    <numIndex index="1">Event->eventStructureChildren</numIndex>
+                  </numIndex>
+                  <numIndex index="10">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.event_structure_parent</numIndex>
+                    <numIndex index="1">Event->searchForStructureParentEvent</numIndex>
+                  </numIndex>                  
+                  
+                  <numIndex index="21">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.structure_detail</numIndex>
+                    <numIndex index="1">Structure->detail</numIndex>
+                  </numIndex>
+                  <numIndex index="22">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.structure_searchform</numIndex>
+                    <numIndex index="1">Structure->searchForm</numIndex>
+                  </numIndex>
+                  <numIndex index="23">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.structure_searchresult-detail</numIndex>
+                    <numIndex index="1">Structure->searchResult;Structure->detail</numIndex>
+                  </numIndex>
+                  <numIndex index="24">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.structure_searchMembers</numIndex>
+                    <numIndex index="1">Member->searchMembers</numIndex>
+                  </numIndex>                  
+                  <numIndex index="25">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.structure_searchMembersCA</numIndex>
+                    <numIndex index="1">Member->searchMembers</numIndex>
+                  </numIndex>                    
+                  
+                  <numIndex index="30">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.donor_listDonor</numIndex>
+                    <numIndex index="1">Donor->listDonor</numIndex>
+                  </numIndex>
+                  <numIndex index="31">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.donor_listDonorFede</numIndex>
+                    <numIndex index="1">Donor->listDonorFede</numIndex>
+                  </numIndex>                  
+                  
+                  <numIndex index="40">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.member_searchMembers</numIndex>
+                    <numIndex index="1">Member->searchMembers</numIndex>
+                  </numIndex>
+                  <numIndex index="41">
+                    <numIndex index="0">LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.member_searchMembersCA</numIndex>
+                    <numIndex index="1">Member->searchMembersCA</numIndex>
+                  </numIndex>                  
+                  
+                </items>
+              </config>
+            </TCEforms>
+          </switchableControllerActions>
+          
+          <settings.filter>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.filter</label>
+              <displayCond>
+                <OR>
+                  <numIndex index="0">FIELD:switchableControllerActions:=:Event->searchResult;Event->detail</numIndex>
+                  <numIndex index="1">FIELD:switchableControllerActions:=:Structure->searchResult;Structure->detail</numIndex>
+                </OR>
+              </displayCond>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </settings.filter>
+
+          <settings.showmap>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.showmap</label>
+              <displayCond>
+                <OR>
+                  <numIndex index="0">FIELD:switchableControllerActions:=:Event->searchResult;Event->detail</numIndex>
+                  <numIndex index="1">FIELD:switchableControllerActions:=:Structure->searchResult;Structure->detail</numIndex>
+                </OR>
+              </displayCond>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </settings.showmap>
+          
+          <settings.showInDirectory>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.showInDirectory</label>
+              <displayCond>FIELD:switchableControllerActions:=:Structure->searchResult;Structure->detail</displayCond>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </settings.showInDirectory>
+          
+          <settings.limit>
+            <TCEforms>
+              <label>limit</label>
+              <displayCond>FIELD:switchableControllerActions:=:Member->searchMembersCA</displayCond>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </settings.limit>          
+        </el>
+      </ROOT>
+    </General>
+
+    <Geolocalisation>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_tab.geolocalisation</sheetTitle>
+          <displayCond>
+            <OR>
+              <numIndex index="0">FIELD:General.switchableControllerActions:=:Event->searchResult;Event->detail</numIndex>
+              <numIndex index="1">FIELD:General.switchableControllerActions:=:Structure->searchResult;Structure->detail</numIndex>
+            </OR>
+          </displayCond>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.geolocalisation.enabled>
+            <TCEforms>
+              <onChange>reload</onChange>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.geolocalisation</label>
+              <config>
+                <type>check</type>
+              </config>
+            </TCEforms>
+          </settings.geolocalisation.enabled>
+          
+          <settings.geolocalisation.latitude>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.geolocalisation.latitude</label>
+              <displayCond>FIELD:settings.geolocalisation.enabled:REQ:true</displayCond>
+              <config>
+                <default>48.8534100</default>
+                <type>input</type>
+              </config>
+            </TCEforms>
+          </settings.geolocalisation.latitude>
+          <settings.geolocalisation.longitude>
+            <TCEforms>
+              <label>LLL:EXT:ot_webservice/Resources/Private/Language/locallang_be.xlf:flexforms_general.setting.geolocalisation.longitude</label>
+              <displayCond>FIELD:settings.geolocalisation.enabled:REQ:true</displayCond>
+              <config>
+                <default>2.3488000</default>
+                <type>input</type>
+              </config>
+            </TCEforms>
+          </settings.geolocalisation.longitude>                     
+        </el>
+      </ROOT>
+    </Geolocalisation>    
+
+  </sheets>
+</T3DataStructure>

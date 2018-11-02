@@ -1,0 +1,29 @@
+<f:layout name="Home" />
+
+<f:section name="Content">
+  <!-- Main content
+      ================================================== -->
+
+  <div class="container" role="main">
+    <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb" />
+    <div class="row content">
+
+      <!-- Middle column -->
+      <div class="col-md-8 col-md-push-2 content-middle">
+        <f:format.html parseFuncTSPath="">{colContent}</f:format.html>
+      </div>
+
+      <!-- Left column -->
+      <div class="col-md-2 col-md-pull-8 content-left">
+        <f:format.html parseFuncTSPath="">{colLeft}</f:format.html>
+      </div>         
+      
+      <!-- Right column -->
+      <div class="col-md-2 content-right">
+        <f:format.html parseFuncTSPath="">{colRight}</f:format.html>
+      </div>        
+
+    </div> <!-- /row content -->
+
+  </div> <!-- /container -->
+</f:section>

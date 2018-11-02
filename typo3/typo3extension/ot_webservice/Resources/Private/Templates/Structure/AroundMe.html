@@ -1,0 +1,21 @@
+<!--
+        =====================
+                Templates/Structure/AroundMe.html
+-->
+<f:if condition="{search}">
+  <f:then>
+    <f:if condition="{structures}">
+      <f:then>
+        <article class="corps-mev">
+          <h3>!!! À définir !!!</h3>
+          <ul class="corps-mev-ligne">
+            <f:for each="{structures}" as="structureItem" iteration="iterator">
+              <f:render partial="Structure/List/Item" arguments="{structureItem: structureItem,settings:settings,iterator:iterator}" />
+            </f:for>
+          </ul>
+        </article>
+      </f:then>
+    </f:if>
+  </f:then>
+</f:if>  
+</f:section>

@@ -1,0 +1,27 @@
+
+plugin.tx_otwebservice {
+	view {
+		# cat=plugin.tx_otwebservice/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ot_webservice/Resources/Private/Templates/
+		# cat=plugin.tx_otwebservice/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ot_webservice/Resources/Private/Partials/
+		# cat=plugin.tx_otwebservice/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ot_webservice/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_otwebservice//a; type=string; label=Default storage PID
+		storagePid =
+	}
+    settings {
+        structure {
+            id =
+            # cat = plugin.tx_otwebservice//3; type=int+; label=typeNum for AJAX call 
+            realurl = "/annuaire/notre-annuaire/"
+            typeNum = 427590
+        }
+        event {
+			realurl = "/agenda/"
+            typeNum = 427591
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Event/SearchForm.html
+-->
+
+<f:section name="content">  
+  <div class="event-search-result">
+    <f:if condition="{search}">      
+      <f:if condition="{events}">         
+        <f:then>
+          <div class="count-msg">
+            <f:translate key="search-text" arguments="{0:'{f:count(subject:events)}',1:search.subject}" />
+          </div>
+          <f:for each="{events}" as="eventItem">
+            <f:render partial="Event/List/Item" arguments="{eventItem: eventItem, settings:settings, className:className}" />
+          </f:for>
+        </f:then>
+        <f:else>
+          <div class="no-event-found">
+            <f:translate key="search-noresult" />
+          </div>
+        </f:else>
+      </f:if>
+    </f:if>
+  </div>
+</f:section>

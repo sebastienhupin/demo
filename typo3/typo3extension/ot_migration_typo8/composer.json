@@ -1,0 +1,24 @@
+{
+    "name": "opentalent/ot-migration-typo8",
+    "type": "typo3-cms-extension",
+    "description": "Opentalent content managment for typo3",
+    "authors": [
+        {
+            "name": "Sebastien Hupin",
+            "email": "sebastien.hupin@gmail.com"
+        }
+    ], 
+    "autoload": {
+        "psr-4": {
+            "Opentalent\\OtMigrationTypo8\\": "Classes/"
+        }
+    },    
+    "replace": {
+        "ot-migration-typo8": "self.version",
+        "typo3-ter/ot-migration-typo8": "self.version"
+    },  
+    "require": {
+        "symfony/yaml": "^4.0"
+    },
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,53 @@
+{namespace otws=Opentalent\OtWebservice\ViewHelpers}
+
+<f:layout name="Home"/>
+
+<f:section name="Content">
+    <!-- Main content
+        ================================================== -->
+
+    <otws:Variable.StructureInfo id="{settings.structure.id}"/>
+    <div class="container" role="main">
+        <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb"/>
+
+        <div class="row content contact">
+            <!-- Middle column -->
+            <div class="col-md-12">
+                <h1>{structureInfo.name}</h1>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="{structureInfo.logo}/60x80" alt="">
+                    </div>
+                    <div class="col-sm-4">
+                        <p>
+                            {structureInfo.streetAddress}
+                            <br/>
+                            {structureInfo.postalCode}
+                            <br/>
+                            {structureInfo.addressCity}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <f:cObject typoscriptObjectPath="lib.tx_themegallery.widgets.contact"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <em>
+                            Les messages marqués * sont obligatoires.
+                        <br />
+                        Ce message sera envoyé à : {structureInfo.name}
+                            </em><br /><br />
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- /row content -->
+
+    </div> <!-- /container -->
+</f:section>

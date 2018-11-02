@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'theme_gallery'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="theme_gallery_slide">Slide content</label>
+            <label index="theme_gallery_slide.1">This and all Subpages</label>
+            <label index="theme_gallery_slide.2">Only on Subpages</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+			<label index="theme_gallery_slide">Contenu glissant</label>
+            <label index="theme_gallery_slide.1">Cette page et ses sous pages</label>
+            <label index="theme_gallery_slide.2">Seulement sur les sous pages</label>
+		</languageKey>
+	</data>
+</T3locallang>

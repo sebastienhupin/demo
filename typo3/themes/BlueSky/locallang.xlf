@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-11-08T19:52:44Z" product-name="theme_gallery_BlueSky">
+    <header/>
+    <body>
+      <trans-unit id="theme_gallery.theme.author.name">
+        <source>Thierry Guffon</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.author.email">
+        <source>thierry.guffon@gmail.com</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.author.url">
+        <source>http://www.flokon.fr/</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.version.number">
+        <source>1.0</source>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.description">
+        <source>Thème s'addaptant aux différentes tailles d'écrans</source>
+      </trans-unit>                        
+    </body>
+  </file> 
+</xliff>

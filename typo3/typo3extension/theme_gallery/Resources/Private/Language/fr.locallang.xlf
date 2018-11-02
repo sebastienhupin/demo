@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2014-11-08T19:52:44Z" target-language="fr" product-name="theme_gallery">
+    <header/>
+    <body>
+      <trans-unit id="theme_gallery.listing" xml:space="preserve" approved="yes">
+        <source>Theme Gallery Listing</source>
+        <target state="translated">Galerie de thèmes</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.available" xml:space="preserve" approved="yes">
+        <source>Available themes</source>
+        <target state="translated">Thémes disponibles</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.not_available" xml:space="preserve" approved="yes">
+        <source>Not Available, please choose the root page of your site</source>
+        <target state="translated">Non disponible, merci de choisir la page racine de votre site</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.activate" xml:space="preserve" approved="yes">
+        <source>Activate</source>
+        <target state="translated">Activer</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.preview" xml:space="preserve" approved="yes">
+        <source>Preview</source>
+        <target state="translated">Prévisualiser</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.detail" xml:space="preserve" approved="yes">
+        <source>Detail</source>
+        <target state="translated">Détail</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.by" xml:space="preserve" approved="yes">
+        <source>By</source>
+        <target state="translated">Par</target>
+      </trans-unit>
+      <trans-unit id="theme_gallery.theme.version" xml:space="preserve" approved="yes">
+        <source>Version</source>
+        <target state="translated">Version</target>
+      </trans-unit>
+    </body>      
+  </file>   
+</xliff>

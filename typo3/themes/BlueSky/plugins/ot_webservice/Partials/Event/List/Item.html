@@ -1,0 +1,41 @@
+<!--
+        =====================
+                Partials/Event/List/Item.html
+-->
+{namespace jsonld=Opentalent\OtWebservice\ViewHelpers\Jsonld}
+<li class="item event-item saison-evenement" 
+    data-id="{jsonld:Jsonld(object:event}" 
+    data-categories="{jsonld:Jsonld(object:event, property:'categories')}"
+    data-latitude="{event.latitude}" 
+    data-longitude="{event.longitude}">
+  <ul>
+    <li class="saison-evenement-image">
+      <img class="lazy" data-original="{event.smallimage}?" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-small.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-small.jpg';"/>
+    </li>
+    <li class="saison-evenement-details">
+      <ul>
+        <li class="saison-evenement-details-nom">{event.name}</li>
+        <li class="saison-evenement-details-adresse"> {event.placeName} {event.postalCode} {event.city}</li>
+        <li class="saison-evenement-details-horaires">
+          <span class="event-date">le 
+            <f:format.date format="d-m-Y">{event.datetimeStart}</f:format.date>  
+            <f:if condition="<f:format.date format='Hi'>{event.datetimeStart}</f:format.date> != '0000'">
+              à
+              <f:format.date format="H\hi">{event.datetimeEnd}</f:format.date>
+            </f:if>         
+          </span>          
+        </li>
+        <li class="saison-evenement-details-type"><f:if condition="{event.type} =='pedagogic'">
+          <f:then>Pédagogique</f:then>
+          <f:else>Culturel</f:else>
+        </f:if></li>
+        <li class="saison-evenement-details-description">{event.description}</li>
+        <li class="saison-evenement-details-plus">
+          <f:link.action controller="Event" action="detail" arguments="{id: '{jsonld:Jsonld(object:event)}'}">Plus d'infos</f:link.action>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <f:render partial="Event/List/Infowindow" arguments="{event:event}"/>
+</li>
+

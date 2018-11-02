@@ -1,0 +1,22 @@
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Structure/SearchForm.html
+-->
+
+<f:section name="content">
+  <h3>Recherche</h3>
+  <f:form object="{search}" name="search" pageUid="{settings.listPid}">
+    <f:form.hidden property="id" />
+    <f:form.hidden property="limit" />
+    <div class="form-group">
+      <f:form.textfield id="structure-where" class="form-control" placeholder="Où ?" property="where"/>
+    </div>
+    <!--
+    <div class="form-group">
+      <f:form.textfield id="structure-what" class="form-control" placeholder="Quoi ?" property="what"/>
+    </div>
+    -->
+    <button type="submit" class="btn btn-primary btn-block">Trouver</button>
+  </f:form>
+</f:section>

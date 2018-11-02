@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">    
+    
+<div id="carousel-{data.uid}" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators"> 
+    {f:variable(name: 'count', value: '0')}
+    <f:for each="{gallery.rows}" as="row" iteration="iteratorRow">        
+        <f:for each="{row.columns}" as="column" iteration="iteratorCol">
+            <f:if condition="{column.media}">
+                <li data-target="#carousel-{data.uid}" data-slide-to="{count}" class="{f:if(condition: '{count} == 0', then: 'active')}"></li>
+                {f:variable(name: 'count', value: '{count +1}')}
+            </f:if>            
+        </f:for>        
+    </f:for>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    {f:variable(name: 'count', value: '0')}  
+    <f:for each="{gallery.rows}" as="row" iteration="iteratorRow">        
+        <f:for each="{row.columns}" as="column">
+            <f:if condition="{column.media}">
+                <div class="item {f:if(condition: '{count} == 0', then: 'active')}">                
+                  <f:image image="{column.media}"/>  
+                  <div class="carousel-caption">
+                      <h3>{column.media.title}</h3>
+                      <p>{column.media.description}</p>
+                  </div>              
+                </div>
+                {f:variable(name: 'count', value: '{count +1}')}                
+            </f:if>    
+        </f:for>       
+    </f:for>  
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-{data.uid}" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Précédent</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-{data.uid}" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Suivant</span>
+  </a>
+</div>
+
+</html>

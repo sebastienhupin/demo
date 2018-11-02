@@ -1,0 +1,21 @@
+<!--
+        =====================
+                Partials/Event/List/Infowindow.html
+-->
+{namespace jsonld=Opentalent\OtWebservice\ViewHelpers\Jsonld}
+
+<div class="infowindow mister-hide" 
+    data-id="{jsonld:Jsonld(object:event)}" 
+    data-latitude="{event.latitude}" 
+    data-longitude="{event.longitude}"
+    data-address="{event.postalCode} {event.addressCity}">
+  <div class="corps-list-ligne-vignette map-infowindow">
+    <f:link.action controller="Event" action="detail" arguments="{id: '{jsonld:Jsonld(object:event)}'}">
+      <img src="{event.image}" title="" alt="" />
+      <p class="corps-list-theme"><f:format.date format="d/m/Y - H\hi">{event.datetimeStart}</f:format.date></p>
+      <h5>{event.name}</h5>
+      <p>{event.placeName}</p>
+      <p>{event.postalCode} - {event.city}</p>
+    </f:link.action>
+  </div>
+</div>

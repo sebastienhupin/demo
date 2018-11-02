@@ -1,0 +1,33 @@
+<!--
+        =====================
+                Partials/Structure/List/Member.html
+-->
+
+<li class="member">
+  <p class="member-image">
+    <f:if condition="{confidentialities.item}">
+      <f:then>
+        <f:for each="{confidentialities.item}" as="confidentiality">
+          <f:if condition="{confidentiality.field} == 'avatar'">
+            <f:then>
+              <f:if condition="{confidentiality.visibility} == 1">
+                <f:then>
+                  <img src="{member.thumbnail}?" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-{member.sexe}.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-{member.sexe}.jpg';" width="160" height="200">
+                </f:then>
+                <f:else>
+                  <img src="/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-{member.sexe}.jpg" width="160" height="200">
+                </f:else>
+              </f:if>
+            </f:then>  
+          </f:if>
+        </f:for>    
+      </f:then>
+      <f:else>
+        <img src="/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-{member.sexe}.jpg" width="160" height="200">
+      </f:else>
+    </f:if>    
+  </p>
+  <p class="member-nom">
+    {member.person.givenName} {member.person.familyName}
+  </p>
+</li>

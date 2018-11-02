@@ -1,0 +1,27 @@
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Event/SearchForm.html
+-->
+
+<f:section name="content">
+  <div class="event-search-form">
+    <f:form object="{search}" name="search" pageUid="{settings.listPid}">
+      <fieldset>
+        <div class="form-group">
+          <label for="event-where">Où</label><br />
+          <f:form.textfield id="event-where" property="where"/>
+        </div>
+        <div class="form-group">
+          <label for="event-when">Quand</label><br />
+          <f:form.textfield id="event-when" property="when"/>
+        </div>
+        <div class="form-group">
+          <label for="event-what">Quoi</label><br />
+          <f:form.textfield id="event-what" property="what"/>
+        </div>        
+        <f:form.submit value="{f:translate(key:'search-start')}" class="btn btn-default"/>
+      </fieldset>
+    </f:form>
+  </div>  
+</f:section>

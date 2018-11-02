@@ -1,0 +1,25 @@
+<f:layout name="General" />
+
+<f:section name="content">
+  <!--
+          =====================
+                  Templates/Event/GoogleMap.html
+  -->
+
+  <article id="corps-ggmaps" class="corps-ggmaps">
+    <div class="corps-ggmaps-btn">
+      <button type="submit" class="map corps-ggmaps-btn-active" id="map-btn"></button>
+    </div>
+    <div class="corps-list-btn">
+      <button type="submit" class="liste" id="liste-btn"></button>
+    </div>
+    <div id="google-map"></div>
+  </article>
+
+  <script type="text/javascript">
+    require(['TYPO3/CMS/OtPortail/GoogleMap'], function (GoogleMap) {
+        GoogleMap.load('AIzaSyCIHRjyLZLXU9lgCjuZhIZ6dI8bqXZCsxY', 'google-map');
+    });
+  </script>
+
+</f:section>

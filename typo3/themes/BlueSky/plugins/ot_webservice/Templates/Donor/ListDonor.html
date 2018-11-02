@@ -1,0 +1,25 @@
+<f:if condition="{donors}">
+  <f:then>
+    <div id="structure_donors" class="partners carousel slide" data-ride="carousel">
+      <div class="column-header">
+        <h2>Nos partenaires</h2>
+      </div> 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <f:for each="{donors}" as="donor" iteration="iterator">
+          <f:render partial="Donor/List/Donor" arguments="{donor: donor,settings:settings,itemIteration:iterator}" />
+        </f:for>
+      </div>    
+    </div>
+    <script type="text/javascript">
+      (function($) {
+        var parent = $("#structure_donors .carousel-inner");
+        var divs = parent.children();
+        while (divs.length) {
+          parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+        parent.children(':first-child').addClass('active');
+      })(jQuery);
+    </script>
+  </f:then>   
+</f:if>

@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+<f:section name="headline">
+    <h1><f:translate key="theme_gallery.listing" /></h1>
+</f:section>
+
+<f:section name="content">
+  <f:if condition="{notavailable}">
+    <f:then>
+      <f:translate key="theme_gallery.no_available" />
+    </f:then>
+    <f:else>
+      <div id="availablethemes">
+        <h3 class="available-themes"><f:translate key="theme_gallery.available" /></h3>
+        <f:for each="{themes}" as="theme" key="key" iteration="loopThemes">
+          <div class="available-theme">
+            <f:link.action
+                action="preview"
+                arguments="{themeConfig: {theme: {name : theme.name}}}"
+                title="activate"
+                class="screenshot"
+                >
+                <f:image src="{theme.path}/{key}/{theme.screenshot}"></f:image>
+            </f:link.action>              
+            <h3>{theme.name}</h3>
+            <div class="theme-author"><f:translate key='theme_gallery.theme.by'></f:translate> <a href="<f:translate key='LLL:fileadmin/theme_gallery/{theme.name}/locallang.xml:theme_gallery.theme.author.url' />" title="" target="blank"><f:translate key='LLL:fileadmin/theme_gallery/{theme.name}/locallang.xml:theme_gallery.theme.author.name' /></a></div>
+            <div class="action-links">
+              <ul>
+                <li><f:link.action action="activate" arguments="{themeConfig: {theme: {name : theme.name}}}"><f:translate key="theme_gallery.activate"/></f:link.action></li>
+                <li><f:link.action action="preview"  arguments="{themeConfig: {theme: {name : theme.name}}}"><f:translate key="theme_gallery.preview" /></f:link.action></li>
+                <li><a href="#" class="theme-detail"><f:translate key="theme_gallery.detail"/></a></li>
+              </ul>
+            </div>
+            <div class="themedetaildiv hide-if-js" style="display: block;">
+              <p><strong><f:translate key="theme_gallery.theme.version" /> :</strong><f:translate key='LLL:fileadmin/theme_gallery/{theme.name}/locallang.xml:theme_gallery.theme.version.number' /></p>
+              <p><f:translate key='LLL:fileadmin/theme_gallery/{theme.name}/locallang.xml:theme_gallery.theme.description' /></p>
+            </div>
+          </div>
+        </f:for>
+      </div>        
+    </f:else>  
+  </f:if>    
+
+</f:section>

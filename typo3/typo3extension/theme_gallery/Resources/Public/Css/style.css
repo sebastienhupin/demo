@@ -1,0 +1,52 @@
+ul {
+  list-style: none;
+}
+
+a {
+  color: #21759b;
+}
+
+#availablethemes, #availablethemes td {
+  border-color: #ddd;
+}
+
+.available-theme {
+  display: inline-block;
+  margin-right: 10px;
+  overflow: hidden;
+  padding: 20px 20px 20px 0;
+  vertical-align: top;
+  width: 300px;
+}
+
+.available-theme img {
+  width: 300px;
+  height: 300px;
+}
+
+.available-theme h3 {
+  margin: 15px 0 0;
+}
+
+.available-theme .theme-author {
+  line-height: 18px;
+}
+
+.available-theme .action-links {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.available-theme .action-links li {
+  float: left;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid #dfdfdf;
+}
+
+form.theme-gallery.theme-gallery-icon {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-08T19:52:44Z" product-name="theme_gallery">
+		<header/>
+		<body>
+			<trans-unit id="maxElement" xml:space="preserve">
+				<source>Max. element in the column</source>
+			</trans-unit>
+			<trans-unit id="maxElementHelp" xml:space="preserve">
+				<source>Select the maximum element allowed in the column.</source>
+			</trans-unit>                         
+			<trans-unit id="allowedElementTypes" xml:space="preserve">
+				<source>Allowed CE</source>
+			</trans-unit>
+			<trans-unit id="allowedElementTypesHelp" xml:space="preserve">
+				<source>Select the content element types that may be created or moved here.</source>
+			</trans-unit>                        
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,20 @@
+<!--
+        =====================
+                Partials/Member/List/Member.html
+-->
+
+<li class="membre">
+  <p class="membre-image">
+    <f:if condition="{member.gender}== 'MISTER'">
+        <f:then>
+            <img src="{member.avatar}/160x200"  width="160" height="200" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-homme.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-homme.jpg';"/>
+        </f:then>
+        <f:else>
+            <img src="{member.avatar}/160x200"  width="160" height="200" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-femme.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/unknown-user-femme.jpg';"/>
+        </f:else>
+    </f:if>    
+  </p>
+  <p class="membre-nom">
+    {member.givenName} {member.name}
+  </p>
+</li>

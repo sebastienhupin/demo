@@ -1,0 +1,28 @@
+module.tx_themegallery {
+	view {
+		# cat=module.tx_themegallery/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:theme_gallery/Resources/Private/Templates/
+		# cat=module.tx_themegallery/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:theme_gallery/Resources/Private/Partials/
+		# cat=module.tx_themegallery/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:theme_gallery/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=module.tx_themegallery//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+tx_themegallery.content.slide {
+	# cat=theme_gallery contentslide//001; type=int; label= slide: If set and no content element is found by the select command, then the rootLine will be traversed back until some content is found. Possible values are “-1” (slide back up to the siteroot), “1” (only the current level) and “2” (up from one level back).
+	slide = -1
+
+	# cat=theme_gallery contentslide//002; type=int; label= collect: If set, all content elements found on current and parent pages will be collected. Otherwise, the sliding would stop after the first hit. Set this value to the amount of levels to collect on, or use “-1” to collect up to the siteroot.
+	collect = -1
+
+	# cat=theme_gallery contentslide//003; type=boolean; label= collectReverse: Change order of elements in collect mode. If set, elements of the current page will be on the bottom.
+	collectReverse = 1
+
+	# cat=theme_gallery contentslide//004; type=boolean; label= collectFuzzy: Only useful in collect mode. If no content elements have been found for the specified depth in collect mode, traverse further until at least one match has occurred.
+	collectFuzzy = 0
+}

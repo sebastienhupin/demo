@@ -1,0 +1,135 @@
+<!--
+        =====================
+                Partials/Event/Detail.html
+-->
+<f:if condition="{event}">
+  {namespace otws=Opentalent\OtWebservice\ViewHelpers\Format}
+  {namespace jsonld=Opentalent\OtWebservice\ViewHelpers\Jsonld}
+  <article id="event-detail" class="item event-task" itemtype="http://schema.org/Event"
+        data-id="{jsonld:Jsonld(object:event}" 
+        data-categories="{jsonld:Jsonld(object:event, property:'categories')}"
+        data-latitude="{event.latitude}" 
+        data-longitude="{event.longitude}"           
+  >
+    <p class="date"><f:if condition="{event.datetimeEnd} !={event.datetimeStart}" then="Du" else="Le"/> 
+    <strong itemprop="startDate" content="{event.datetimeStart}">
+      <f:format.date format="d/m/Y">{event.datetimeStart}</f:format.date>
+      <f:if condition="<f:format.date format='Hi'>{event.datetimeEnd}</f:format.date> != '0000'">
+        <f:format.date format=" H\hi">{event.datetimeEnd}</f:format.date>
+      </f:if>  
+    </strong>
+    <f:if condition="{event.datetimeEnd} !={event.datetimeStart}">
+      <f:then>
+        au 
+        <strong itemprop="endDate" content="{event.datetimeEnd}">
+          <f:format.date format="d/m/Y">{event.datetimeEnd}</f:format.date>
+          <f:if condition="<f:format.date format='Hi'>{event.datetimeEnd}</f:format.date> != '0000'">
+            <f:format.date format=" H\hi">{event.datetimeEnd}</f:format.date>
+          </f:if>          
+        </strong>
+      </f:then>  
+    </f:if>
+    </p>
+    <h3 itemprop="name"> {event.name}</h3>
+    <p class="category"><otws:Categories categories="{jsonld:Jsonld(object:event, property:'categories')}" format=" <span class='separator'>•</span> "></otws:Categories></p>
+    <hr>
+    <div class="pull-left">
+      <img itemprop="image" src="{event.largeimage}?" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-large.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-large.jpg';"/>
+    </div>
+    <div class="clearfix">
+      <f:if condition="{event.description}">
+        <f:then>
+          <h4>Description :</h4>
+          <div class="description clearfix" itemprop="description">
+            <f:format.nl2br>
+              {event.description}
+            </f:format.nl2br>
+          </div>
+        </f:then>
+      </f:if>
+    </div>  
+    <hr>
+    <div class="clearfix">      
+      <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventMap" />
+      <div class="adresse" itemprop="location">
+        <h4>Adresse :</h4>
+        <div itemscope itemtype="http://schema.org/Place">
+          <p><b>{event.placeName}</b></p>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <p itemprop="streetAddress">{event.streetAddress}</p>
+            <p><span itemprop="postalCode">{event.postalCode}</span> - <span itemprop="addressLocality">{event.city}</span></p>
+            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+              <meta itemprop="latitude" content="{event.latitude}"/>
+              <meta itemprop="longitude" content="{event.longitude}"/>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <hr>
+    <f:if condition="{event.priceMaxi}">
+      <div class="clearfix">
+        <h4>Tarifs</h4>
+        <table class="table table-striped" itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+          <thead>
+            <tr>
+              <td></td>
+              <td><b>Prix</b></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <b>Prix max.</b>
+              </td>
+              <td>
+                <span itemprop="highPrice">{event.priceMaxi} €</span>
+              </td>
+            </tr>
+            <f:if condition="{event.priceMini}"> 
+            <tr>
+              <td>
+                <b>Prix mini.</b>
+              </td>
+              <td>
+                <span itemprop="lowPrice">{event.priceMini} €</span>
+              </td>
+            </tr>
+            </f:if>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <f:if condition="{event.zupId} != ''">
+            <f:then>
+              <a href="{event.deepLink}" target="_blank">
+                <button class="col-sm-5 btn btn-primary">Réservez vos places</button>
+              </a>
+            </f:then>
+          </f:if>
+          <f:if condition="{event.url}">
+            <f:then>
+              <a href="{event.url}" target="_blank">
+                <button class="<f:if condition='{event.zupId}' then='col-sm-offset-2'/> col-sm-5 btn btn-info">Visitez le site de l'événement.</button>
+              </a>
+            </f:then>
+          </f:if>
+        </div>
+      </div>
+    </f:if>   
+    <f:render partial="Event/List/Infowindow" arguments="{event:event}"/>
+  </article>
+  
+  <script type="text/javascript">
+      require(['TYPO3/CMS/OtPortail/ItemsManagement'], function (ItemsManagement) {
+        document.addEventListener('mapLoad', function (e) { 
+            // Remove the listener
+            e.target.removeEventListener(e.type, arguments.callee);
+            var googleMap = e.detail;
+            ItemsManagement.init(googleMap);
+            googleMap.showItemsOntoTheMap();
+        }, false);          
+      });
+
+  </script>
+</f:if>

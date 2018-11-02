@@ -1,0 +1,23 @@
+{
+    "name": "opentalent/theme-gallery",
+    "type": "typo3-cms-extension",
+    "description": "Opentalent theme gallery for typo3",
+    "authors": [
+        {
+            "name": "Sebastien Hupin",
+            "email": "sebastien.hupin@gmail.com"
+        }
+    ],   
+    "autoload": {
+        "psr-4": {
+            "Opentalent\\ThemeGallery\\": "Classes/"
+        }
+    },    
+    "replace": {
+        "theme_gallery": "self.version",
+        "typo3-ter/theme-gallery": "self.version"
+    },  
+    "require": {       
+    },
+    "minimum-stability": "dev"
+}

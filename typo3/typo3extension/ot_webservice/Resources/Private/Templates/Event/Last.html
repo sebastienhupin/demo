@@ -1,0 +1,32 @@
+<f:layout name="General" />
+
+<f:section name="content"> 
+<!--
+        =====================
+                Templates/Event/Top.html
+-->
+  <f:if condition="{search}">
+    <f:then>
+      <f:if condition="{events}">        
+        <f:then>
+          <article class="corps-list">
+            <h3>Événéments</h3>
+            <ul class="row corps-list-ligne">
+              <f:for each="{events}" as="eventItem" iteration="iterator">
+                <f:render partial="Event/List/Item" arguments="{eventItem: eventItem,settings:settings,iterator:iterator}" />
+              </f:for>
+            </ul>
+          </article>
+        </f:then>
+      </f:if>
+    </f:then>
+    <f:else>
+      Chargement...
+      <script type="text/javascript">
+        jQuery(document).ready(function () {
+          navGeolocalisation();
+        });
+      </script>
+    </f:else>
+  </f:if>  
+</f:section>

@@ -1,0 +1,36 @@
+{namespace otws=Opentalent\OtWebservice\ViewHelpers\Utility}
+<f:layout name="Home" />
+
+<f:section name="Content">
+  <!-- Main content
+      ================================================== -->
+
+  <div class="container" role="main">
+    <f:cObject typoscriptObjectPath="lib.navigation.breadcrumb" />
+    <div class="row content">
+      <otws:IfHasAction pluginName="tx_otwebservice_pi1" action="detail">
+        <f:then>
+          <!-- Middle column -->
+          <div class="content-middle">
+            <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventDetail" />
+          </div>
+        </f:then>
+        <f:else>
+
+          <!-- END OF Left column -->
+          <!-- Middle column -->
+          <div class="content-middle">
+            <p class="saison-titre">Les évènements</p>
+            <div class="col-md-8 content-middle">
+              <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventMap" />
+            </div>
+            <div class="col-md-4 ggmaps-list-results">
+              <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.eventSearchResultStructure" data="{limit:30000}"/>
+            </div>
+          </div>
+          <!-- END OF Middle column -->
+        </f:else>
+      </otws:IfHasAction>      
+    </div> <!-- /row content -->
+  </div> <!-- /container -->
+</f:section>

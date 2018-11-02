@@ -1,0 +1,1044 @@
+/*
+ * Bootstrap Custom Style Sheet for 2iOS mini-websites v0.1.2
+ * Copyrights 2015 2iOpenService - http://www.2iopenservice.fr
+ * Author: Johan HAUDIQUET
+ */
+
+
+/*
+ * TABLE OF CONTENT
+ * ----------------
+ * 
+ * 1. RESET
+ * 2. GENERAL
+ * 3. NAVBARS
+ *    a. Top
+ *    b. Middle: menu
+ *    c. Bottom
+ *    d. Left
+ * 4. COVER IMAGE
+ * 5. BREADCRUMB
+ * 6. MAIN CONTENT
+ *    a. Left and right columns
+ *    b. Middle column
+ *      > Google Map
+ *      > Popup fédération
+ *      > Recherche
+ *      > Membres du CA
+ *      > Adhérents
+ *      > Nous contacter
+ *      > Saison en cours
+ * 7. BACK TO TOP BUTTON
+ */
+
+
+/* 1. RESET */
+
+.nav a{
+  font-weight: normal;
+}
+
+.navbar {
+  /* Remove the rounded borders */
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  /* Change the default color for the background */
+  background: #FFF;
+  /* Fix the margins */
+  margin: 0px;
+  /* Hide the borders */
+  border: solid 0px;
+  -moz-box-shadow: 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 0px #ffffff;
+  -o-box-shadow: 0px 0px 0px 0px #ffffff;
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#ffffff, Direction=NaN, Strength=0);
+}
+.navbar-toggle {
+  margin: 8px;
+}
+.navbar > .container {
+  padding: 0px;
+}
+.navbar > .container > .row > .col-md-8 {
+  padding: 0px;
+}
+.navbar-collapse {
+  padding: 0px;
+}
+
+.formContact{
+  margin-top: 10px;
+  border: 1px solid #CCC;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+/* 2. GENERAL */
+
+body, html {
+  width: auto !important;
+  overflow-x: hidden !important;
+  font-family: Arial;
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+body > #wrap {
+  height:100%;
+  position:relative;
+}
+body > #wrap > .container {
+  min-height: 70% !important;
+}
+hr {
+    margin: 15px 5px;
+    border-color: #BBB;
+}
+.grey-bg {
+  background-color: #f6f6f6;
+}
+
+/* Pagination */
+.pagination > li > a, .pagination > li:last-child > a {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: 2px solid #DDD;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #FFF;
+  color: #333;
+  padding: 5px 20px;
+}
+.pagination > .active > a {
+  background-color: #FFF;
+  color: ###COLOR1###;/*#4facc6;*/
+  font-weight: bold;
+  border-right: 2px solid #DDD;
+}
+.pagination-titre {
+  float: left;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* The headers and paragraphs need
+ * to be smaller for this template
+ */
+.frame-default header h2{
+  font-size: 1.6em;
+  padding: 5px;
+  color: #4facc6;/*#4facc6;*/
+}
+
+h1 {
+  font-size: 1.6em;
+  padding: 5px;
+  color: #4facc6;/*#4facc6;*/
+}
+h2 {
+  font-size: 1.4em;
+  padding: 5px;
+}
+h3 {
+  font-size: 1.2em;
+  padding: 5px;
+}
+p {
+  padding: 5px;
+}
+a {
+  color: ###COLOR1###;/*#4facc6;*/
+}
+
+.align-center{
+  text-align: center;
+}
+
+/* Tables */
+table {
+  border: none !important;
+}
+table th {
+  border: 2px solid #FFF;
+  padding: 5px 10px;
+}
+table td {
+  border: 2px solid #FFF;
+  padding: 5px 10px;
+}
+
+
+
+/* 3. NAVBARS */
+
+
+/* a. Top */
+
+.navbar-top {
+  min-height: 95px;
+}
+.navbar-top-menu {
+  margin: 25px 0px;
+  padding-right: 5px;
+}
+.navbar-top a {
+  color: #555;
+}
+.navbar-top .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  background: ###COLOR1###;/*#4facc6;*/
+  color: #FFF;
+}
+.navbar-brand {
+  display: block;
+  float: left;
+  padding: 17.5px 20px;
+}
+.navbar-brand img {
+  max-height: 75px;
+}
+.structure-name {
+  display: block;
+  float: left;
+  padding: 0px;
+  margin: -10px;
+  padding-top: 30px;
+}
+@media (min-width: 1200px) {
+  .structure-name {
+    width: 750px;
+    max-width: 750px;
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .structure-name {
+    width: 600px;
+    max-width: 600px;
+  }
+}
+@media (min-width: 767px) and (max-width: 990px) {
+  .structure-name {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .structure-name {
+    width: 250px;
+    max-width: 250px;
+  }
+}
+.structure-name h1 {
+  color: #333;
+}
+.network-logo {
+  max-height: 50px; /* Define an area for the logo */
+  padding: 0px !important;
+}
+.network-logo img {
+  max-height: 50px;
+}
+.network-logo-mobile {
+  display: none;
+}
+.navbar-user {
+  padding: 10px 5px;
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin: 5px 0px;
+  }
+  .navbar > .container {
+    padding: 0px 20px;
+  }
+  .navbar-default .navbar-toggle {
+    background-color: #FFF;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #FFF;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #DDD;
+  }
+  .navbar-menu .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #FFF;
+  }
+}
+
+
+/* b. Middle: menu */
+
+.navbar-menu {
+  background-color: ###COLOR1###;/*#4facc6;*/
+}
+.navbar-menu .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  background: #e7e7e7 !important;
+  color:#555 !important;
+}
+.navbar-menu .navbar-nav > li > a {
+  color: #FFF;
+}
+
+/* Background color for the selected submenus */
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: ###COLOR1### !important;/*#4facc6 !important;*/
+  background-image: none !important;
+}
+
+/* Keep the navbar static when scrolling down */
+
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+#navstatic.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index:100;
+}
+
+.navbar-user.in_affix a {
+  color: #FFF;
+  width: 30%;
+}
+.navbar-user.in_affix a:hover {
+  background: none !important;
+  color: #CCC;
+}
+
+/* c. Bottom */
+
+.navbar-bottom-line {
+  height: 55px;
+  width: 100%;
+}
+.navbar-bottom {
+  height: 80px;
+  width: 100%;
+  padding: 15px 0px;
+  background-image:-webkit-linear-gradient(top, #575757 0, #3d3d3d 100%);
+  background-image:linear-gradient(to bottom, #575757 0, #3d3d3d 100%);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff575757', endColorstr='#ff3d3d3d', GradientType=0);
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  -moz-box-shadow: 0px -2px 10px 0px #656565;
+  -webkit-box-shadow: 0px -2px 10px 0px #656565;
+  -o-box-shadow: 0px -2px 10px 0px #656565;
+  box-shadow: 0px -2px 10px 0px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=10);
+}
+
+.social {
+  padding: 10px 0px;
+}
+.social img {
+  margin-right: 5px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.social img:hover {
+  opacity: 0.8; /* Make the icons brighter when the mouse is over */
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.credits {
+  padding-top: 17.5px;
+  padding-left: 0px;
+  color: #FFF;
+  font-weight: bold;
+}
+.credits ul {
+  padding: 0px;
+}
+.credits ul li {
+  display: inline;
+  padding: .2em 1em;
+}
+.credits a {
+  color: #FFF;
+  text-decoration: none;
+}
+.credits a:hover {
+  color: #999;
+}
+
+.logo-ot {
+  text-align: right;
+}
+/*.logo-ot img {
+  max-width: 100%;
+  height: auto;
+}*/
+
+/* d. Left */
+
+.nav-pills>li>a {
+  color:  ###COLOR1###; /*#4facc6;*/
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: ###COLOR1###; /*#4facc6;*/
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+
+
+/* 4. COVER IMAGE */
+
+.cover-image {
+  padding: 190px 15px;
+  color: inherit;
+  background-image: url('../img/cover-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* 5. BREADCRUMB */
+
+.breadcrumb {
+  background-color: #FFF !important;
+  color: #b8b8b9;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.breadcrumb ul {
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li:before {
+  content: "> ";
+}
+
+.breadcrumb li:first-child:before {
+  content: "";
+}
+
+.breadcrumb li:last-child {
+  color: #737373;
+}
+
+.breadcrumb{
+  margin-bottom: 0px !important;
+}
+
+
+/* 6. MAIN CONTENT */
+
+/* a. Left and right columns */
+
+.content-left {
+  padding: 0px 10px 0px 0px;
+}
+.content-left p {
+  font-size: 0.8em;
+}
+.content-left img {
+  max-width: 100%;
+  height: auto;
+}
+.content-right {
+  padding: 0px 0px 0px 10px;
+}
+.content-right p {
+  font-size: 0.8em;
+}
+.content-right img {
+  max-width: 100%;
+  height: auto;
+}
+.content-left h1 {
+  background-color: #323232; /* Grey background */
+  color: ###COLOR1###; /*#4facc6;*/ /* Blue text */
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+}
+.content-left .frame-default h2 {
+  background-color: #323232; /* Grey background */
+  color: ###COLOR1###; /*#4facc6;*/ /* Blue text */
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+}
+.content-right h1 {
+  background-color: #323232; /* Grey background */
+  color: ###COLOR1###; /*#4facc6;*/ /* Blue text */
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+}
+.content-right .frame-default h2 {
+  background-color: #323232; /* Grey background */
+  color: ###COLOR1###; /*#4facc6;*/ /* Blue text */
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+}
+.column-header {
+  background-color: #323232; /* Grey background */
+  color: ###COLOR1###; /*#4facc6;*/ /* Blue text */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.column-header h2 {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+}
+.column-header-inverse {
+  background-color: ###COLOR1###; /*#4facc6;*/ /* Blue background */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+}
+.column-header-inverse h2 {
+  background-color: transparent !important; /* Remove default background */
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1em;
+  color: #ffffff; /* White text */
+}
+.rss-image {
+  text-align: right;
+  padding: 0px;
+}
+.partners {
+  text-align: center;
+}
+.partners p {
+  text-align: left;
+}
+.partners img {
+  max-width: 150px;
+  height: auto;
+}
+.events-table
+{
+  display: table;
+  width: 100%;
+}
+.events-row
+{
+  display: table-row;
+}
+.events-first-cell
+{
+  display: table-cell;
+  padding: 12.5px 5px;
+  width: 60px;
+  vertical-align: top;
+  border-bottom: 1px solid #CCC;
+}
+.events-cell
+{
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px 0px 0px 0px;
+  border-bottom: 1px solid #CCC;
+}
+.event-title {
+  font-weight: bold;
+}
+.event-date {
+  color: #666;
+}
+.search-form {
+}
+.search-form h2 {
+  font-size: 2em;
+  margin: 0px 0px 10px 0px;
+}
+.search-form input {
+  background-color: #FFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.search-form-btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  width: 100%;
+  background-color: ###COLOR1###; /*#4facc6;*/
+  color: #FFF;
+  font-weight: bold;
+}
+.search-form-map {
+  text-align: right;
+  padding: 10px 0px;
+}
+.news-img-wrap {
+  width: 60px !important;
+}
+.news-img-wrap img {
+  width: 50px !important;
+}
+.no-news-found {
+  font-size: 0.8em;
+  color: #333 !important;
+  font-style: normal !important;
+  padding: 10px 5px;
+}
+
+/* b. Middle column */
+
+.content-middle {
+}
+.content-middle img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Google Map */
+#google-map {
+  width: 100%;
+  height: 400px;
+}
+.map-first-level {
+  list-style: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.map-second-level {
+  padding: 5px 20px;
+  font-weight: bold;
+  color: #979797;
+}
+.corps-list-ligne-vignette.map-infowindow {
+  padding: 10px 0px;
+  float: none !important;
+  min-width: 260px !important;
+  display: block !important;
+  overflow-x: hidden !important;    
+}
+.corps-list-ligne-vignette.map-infowindow p {
+  color: #666;
+  padding: 0px;
+  margin: 0px;
+}
+.corps-list-ligne-vignette.map-infowindow a {
+  text-decoration: none;
+  color: ###COLOR1###; /*#4facc6;*/
+}
+
+/* Popup fédération */
+#myfede ul {
+  padding: 0px;
+}
+#myfede li {
+  list-style: none;
+  padding-left: 30px;
+}
+#myfede img {
+  padding-right: 5px;
+}
+
+/* Recherche */
+
+.structures-search {
+  width: 100%;
+  padding: 15px;
+}
+.structure-item {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0px;
+  float: left;
+}
+.structure-item li {
+  list-style: none;
+}
+.structure-item img {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  max-width: 75px;
+  height: auto;
+}
+.structure-item p {
+  padding: 0px 5px;
+}
+.structure-item a {
+  text-decoration: none;
+}
+.structure-item a p {
+  color:#666;
+}
+
+/* one column content center */
+.content-middle-one-column {
+  width: 100%;
+  text-align: center;
+}
+
+/* Adhérents et Membres du CA */
+.adherents, .membre, .members {
+  padding: 0;
+}
+.adherents, .membre, .members {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.adherent-role, .membre-role {
+  background-color: #adaeae;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.membre-image img {
+  max-width: 120px;
+  max-height: 150px;
+  height: auto;
+}
+.membre-nom {
+  text-align: center;
+}
+
+/* Nous contacter */
+.contact {
+}
+.contact h1 {
+  font-size: 3em;
+  padding: 10px 0px;
+}
+.contact h2 {
+  background-color: #323232;
+  color: ###COLOR1###; /*#4facc6;*/
+}
+.contact h3 {
+  padding: 0px;
+  font-style: italic;
+}
+.contact label {
+  color: ###COLOR1###; /*#4facc6;*/
+}
+.contact .form-big-group {
+  border: 1px solid #333;
+  padding: 0px;
+}
+.contact .form-group {
+  margin: 25px;
+}
+.contact .btn {
+  margin: 0px;
+}
+.contact textarea {
+  min-height: 300px;
+}
+.contact .glyphicon {
+  font-size: 2.5em;
+}
+.contact .form-consignes {
+  padding: 15px 0px;
+}
+.contact .form-consignes span {
+  padding: 3px 0px;
+}
+
+/* Saison en cours */
+.saison-titre {
+  font-size: 1.5em;
+  color: #737373;
+  padding: 5px 10px 0px 10px;
+}
+.saison-evenements {
+  width: 100%;
+  padding: 5px 15px;
+}
+.saison-evenement {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0px;
+  float: left;
+}
+
+.saison-evenement li {
+  list-style: none;
+}
+.saison-evenement-role {
+  width: 100%;
+  background-color: #adaeae;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.saison-evenement-image {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+.saison-evenement-image img {
+  max-width: 100%;
+  height: auto;
+}
+.saison-evenement-details {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.clear{
+  clear:both;
+}
+.saison-evenement-details ul {
+  padding: 0px;
+}
+.saison-evenement-details-nom {
+  font-weight: bold;
+  color: #333;
+  list-style: none;
+}
+.saison-evenement-details-adresse {
+  font-weight: bold;
+  list-style: none;
+  color: #666;
+}
+.saison-evenement-details-horaires {
+  font-weight: bold;
+  list-style: none;
+}
+.saison-evenement-details-type {
+  color: #979797;
+  list-style: none;
+}
+.saison-evenement-details-description {
+  color: #979797;
+  list-style: none;
+}
+.saison-evenement-details-plus {
+  color: ###COLOR1###; /*#4facc6;*/
+  list-style: none;
+}
+.saison-evenement-details-plus a {
+  color: ###COLOR1###; /*#4facc6;*/
+}
+.saison-evenement-details-url {
+  font-size: 0.8em;
+  color: #979797;
+  list-style: none;
+  padding-top: 10px;
+  word-break: break-all;
+}
+.saison-evenement-details-url-structure {
+  font-size: 0.8em;
+  color: #979797;
+  list-style: none;
+  word-break: break-all;
+}
+.saison-evenement-modal-image {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  max-width: 100%;
+  height: auto;
+}
+.saison-evenement-modal-description {
+  margin: 0px;
+}
+
+.saison-evenement ul{
+  padding-left: 5px;
+}
+.event-task > .pull-left {
+  padding: 10px 10px 10px 0px;
+}
+
+/* 7. BACK TO TOP BUTTON */
+
+.to-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+  text-decoration: none;
+  border-radius: 3.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.to-top:hover {
+  color: #fff !important;
+  background-color: ###COLOR1###; /*#4facc6;*/
+  text-decoration: none;
+}
+
+
+.mister-hide {
+  display: none;
+}
+
+
+/* Google Maps*/
+.corps-ggmaps-btn button, .corps-list-btn button {
+  position: absolute;
+  height: 44px;
+  width: 40px; 
+  border: none;
+  display: none;
+}
+
+.corps-list-btn button {
+  margin-right : -62px;
+  z-index: 10;
+}
+
+.corps-ggmaps-btn button {
+  position: relative;
+  top: 1px;
+  z-index: 9;
+}
+.corps-list-btn .liste {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) left 0px;
+
+}
+.corps-list-btn .liste:hover {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) left 44px;
+}
+
+.liste.corps-ggmaps-btn-active {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) left 44px !important;
+}
+
+.corps-ggmaps-btn .map {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) right 0px;
+}
+.corps-ggmaps-btn .map:hover {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) right 44px;
+}
+.map.corps-ggmaps-btn-active {
+  background: url(fileadmin/theme_gallery/BlueSky/Templates/assets/img/btn-carte.png) right 44px;
+}
+
+.gmnoprint img { max-width: none; }
+
+
+.right-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-left: 4px dashed;
+  border-bottom: 4px solid transparent;
+}
+
+
+
+
+.affix + .container[role="main"] {
+  padding-top:40px
+}
+
+.pagination{display: none;}
+
+@media (min-width: 990px) {
+  .ggmaps-list-results {
+    height: 400px;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .pagination {
+    display: block;
+    margin-bottom: 10px;
+    float:left;
+  }
+  .ggmaps-list-results {
+    height: auto;
+  }
+
+  .saison-evenement-details {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .map-event, .form-event{
+    display: none;
+  }
+
+  a.in_affix {
+    position: fixed !important;
+    top: 0px;
+    left: 0;
+    width: 40%;
+    z-index:200;
+    color:#FFF;
+  }
+  a.in_affix:hover {
+    background:none !important;
+  }
+}
+
+/** FIX for Bootstrap and Google Maps Info window styes problem **/
+img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
+max-width: none;
+}
+
+table.ce-table-244 {
+  background-color: silver;
+}
+table.ce-table-1 { background-color: #EDEBF1; }
+table.ce-table-2 { background-color: #F5FFAA; }
+table.ce-table-240 { background-color: black; }
+table.ce-table-241 { background-color: white; }
+table.ce-table-242 { background-color: #333333; }
+table.ce-table-243 { background-color: gray; }
+table.ce-table-244 { background-color: silver; }

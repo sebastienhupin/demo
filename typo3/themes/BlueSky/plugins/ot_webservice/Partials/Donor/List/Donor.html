@@ -1,0 +1,12 @@
+<div class="item">
+  <f:if condition="{donor.website}">
+    <f:then>
+      <a href="{donor.website}" target="_blank">
+        <img src="{donor.logo}" alt="{donor.name}" />
+      </a>                
+    </f:then>
+    <f:else>
+         <img src="{donor.logo}" alt="{donor.name}" />
+    </f:else>
+  </f:if>
+</div>

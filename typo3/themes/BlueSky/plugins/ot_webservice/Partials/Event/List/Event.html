@@ -1,0 +1,23 @@
+<!--
+        =====================
+                Partial/Event/List/Event.html
+-->
+{namespace otws=Opentalent\OtWebservice\ViewHelpers\Uri}
+<div class="events-row">
+  <div class="events-first-cell">    
+    <img src="{event.image}?" title="" alt="" width="50" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-small.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-small.jpg';"/>
+  </div>
+  <div class="events-cell">
+    <p>
+      <span class="event-title">{event.name}</span><br />
+      <span class="event-date">le 
+        <f:format.date format="d-m-Y">{event.datetimeStart}</f:format.date>  
+        <f:if condition="<f:format.date format='Hi'>{event.datetimeStart}</f:format.date> != '0000'">
+          <f:format.date format="H\hi">{event.datetimeEnd}</f:format.date>
+        </f:if>
+      </span><br />
+      <otws:UriPageEventFromDomainName domainName="{event.organization.website}" id="{jsonld:Jsonld(object:event.organization}">Plus d'infos</otws:UriPageEventFromDomainName>
+
+  </p>
+  </div>
+</div>

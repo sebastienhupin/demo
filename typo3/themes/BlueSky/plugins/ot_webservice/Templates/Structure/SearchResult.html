@@ -1,0 +1,72 @@
+<f:layout name="General" />
+
+<f:section name="content">
+    <!--
+            =====================
+                    Templates/Structure/SearchResult.html
+    -->
+    <f:if condition="{search}">
+        <f:then>
+            <f:if condition="{structures}">
+                <f:then>
+                    <article class="structure-list corps-list">
+                        <h3>Résultats de votre recherche</h3>
+                        <ul class="pagination">
+
+                        </ul>
+                        <ul id="structures-search" class="structure-result row corps-list-ligne">
+                            <f:for each="{structures}" as="structure" iteration="iterator">
+                                <f:render partial="Structure/List/Item" arguments="{structure: structure,settings:settings,iterator:iterator}" />
+                            </f:for>
+                        </ul>
+                    </article>
+                    <ul class="pagination">
+
+                    </ul>
+                    <script type="text/javascript">
+                        jQuery(function($) {
+                            if (jQuery(window).width() < 990) {
+                                var items = jQuery(".structure-item");
+
+                                var numItems = items.length;
+
+                                if (jQuery(window).width() < 767) {
+                                    var perPage = 10;
+                                } else {
+                                    var perPage = 5;
+                                }
+
+
+                                items.slice(perPage).hide();
+                                jQuery(".pagination").pagination({
+                                    items: numItems,
+                                    itemsOnPage: perPage,
+                                    onPageClick: function(pageNumber) {
+                                        var showFrom = perPage * (pageNumber - 1);
+                                        var showTo = showFrom + perPage;
+                                        items.hide().slice(showFrom, showTo).show();
+                                    }
+                                });
+
+                                var checkFragment = function() {
+                                    var hash = window.location.hash || "#page-1";
+                                    hash = hash.match(/^#page-(\d+)$/);
+                                    if (hash)
+                                        jQuery(".pagination").pagination("selectPage", parseInt(hash[1]));
+                                };
+
+                                jQuery(window).bind("popstate", checkFragment);
+                                checkFragment();
+                            }
+                        });
+                    </script>          
+                </f:then>
+                <f:else>
+                    <article class="corps-list">
+                        <h5>Aucun résultat correspondant à votre recherche</h5>
+                    </article>           
+                </f:else>
+            </f:if>
+        </f:then>
+    </f:if>
+</f:section>

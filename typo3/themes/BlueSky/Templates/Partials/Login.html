@@ -1,0 +1,91 @@
+<!-- Login
+================================================== -->
+
+<!-- Modal connexion -->
+<div class="modal fade bs-example-modal-lg" id="connexion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Connexion</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-offset-3 col-sm-6">
+            <f:cObject typoscriptObjectPath="lib.boxlogin" /> 
+          </div>
+        </div>
+        <hr>
+        <h4>Découvrez nos logiciels de gestion & communication </h4>
+        <div class="row modal-add product">
+          <div class="col-sm-4">
+            <a href=""></a>
+            <img src="/websites/images/csm_OpenTalent_LogoNoir_Jaune_artist.png" />
+            <h5>Chorales, Orchestres, Groupes de danse, Compagnies de théatre, de cirque ...</h5>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href=""></a>
+            <img src="/websites/images/csm_logo_school.png" />
+            <h5>Écoles (musique, danse, théâtre, cirque) Conservatoires ...</h5>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a href=""></a>
+            <img src="/websites/images/csm_OpenTalent_LogoNoir_rouge_manager.png" />
+            <h5>Fédérations, Collectivités publiques</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<f:security.ifAuthenticated>
+  <f:then>
+    <div class="modal fade" id="myfede" tabindex="-1" role="dialog" aria-labelledby="myFedeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+
+          <div class="modal-body">
+            {namespace otcms=Opentalent\OtCms\ViewHelpers}
+            <otcms:MyFede />      
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      /* 
+       * Affiche la boite modal MyFede
+       */
+      function displayModalMyFede(type) {
+          var title;
+          switch (type) {
+              case 'struct' :
+                  title = 'Choix de votre structure';
+                  break;
+              case 'fede' :
+                  title = 'Choix de votre fédération';
+                  break;
+              case 'net' :
+                  title = 'Choix de votre réseau';
+                  break;
+          }
+
+          jQuery('#myfede').find('.modal-title').text(title).end().modal();
+      }      
+    </script>
+  </f:then>
+</f:security.ifAuthenticated>          

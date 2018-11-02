@@ -1,0 +1,42 @@
+<!--
+        =====================
+                Partials/Structure/Detail.html
+-->
+{namespace otws=Opentalent\OtWebservice\ViewHelpers\Format}
+<f:if condition="{structure}">
+  <article id="structure-detail" class="structure-task" itemtype="http://schema.org/Organization">
+    <h3 itemprop="name"> {structure.nameStr}</h3>
+    <p class="category"><otws:Categories categories="{jsonld:Jsonld(object:structure, property:'categories')}" format=" <span class='separator'>•</span> "></otws:Categories></p>
+    <hr>
+    <div class="pull-left">
+      <img itemprop="image" src="{structure.largeimageStr}?" onerror="if (this.src != '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-large.jpg') this.src = '/fileadmin/theme_gallery/BlueSky/Templates/assets/img/default-large.jpg';"/>
+    </div>
+    <div class="clearfix">
+      <f:if condition="{structure.descriptionStr}">
+        <f:then>
+          <h4>Description :</h4>
+          <div class="description clearfix" itemprop="description">
+            {structure.descriptionStr}
+          </div>
+        </f:then>
+      </f:if>
+    </div>  
+    <hr>
+    <div class="clearfix">
+      <f:cObject typoscriptObjectPath="plugin.tx_otwebservice.widgets.structureMap" />
+      <div class="adresse" itemprop="location">
+        <h4>Adresse :</h4>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <p itemprop="streetAddress">{structure.addressStr}</p>
+          <p><span itemprop="postalCode">{structure.zipCodeStr}</span> - <span itemprop="addressLocality">{structure.cityStr}</span></p>
+          <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <meta itemprop="latitude" content="{structure.latitudeStr}"/>
+            <meta itemprop="longitude" content="{structure.longitudeStr}"/>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <f:render partial="Structure/List/Infowindow" arguments="{structure:structure}"/>
+  </article>
+    
+</f:if>

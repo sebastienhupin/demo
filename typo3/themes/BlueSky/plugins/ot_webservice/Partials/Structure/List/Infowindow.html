@@ -1,0 +1,17 @@
+<!--
+        =====================
+                Partials/Structure/List/Infowindow.html
+-->
+{namespace jsonld=Opentalent\OtWebservice\ViewHelpers\Jsonld}
+<f:alias map="{address: '{jsonld:Organization(object:structure, property: \'ADDRESS_PRINCIPAL\' )}'}"> 
+    <div class="infowindow mister-hide" data-id="{jsonld:Jsonld(object:structure)}" data-geolocation="<![CDATA[{]]>'lat':'{address.latitude}', 'lng':'{address.longitude}'<![CDATA[}]]>">
+        <div class="corps-list-ligne-vignette map-infowindow">
+            <f:link.action controller="Structure" action="detail" arguments="{id: '{jsonld:Jsonld(object:structure)}'}">
+                <img class="lazy" data-original="{structure.logo}?" />
+                <h5>{structure.name}</h5>
+                <p>{address.streetAddress}<br/>{address.streetAddressSecond}<br/>{address.streetAddressThird}</p>
+                <p>{address.postalCode} - {address.addressCity}</p>      
+            </f:link.action>
+        </div>
+    </div>
+</f:alias>

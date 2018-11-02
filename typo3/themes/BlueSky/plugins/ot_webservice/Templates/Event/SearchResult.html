@@ -1,0 +1,86 @@
+<f:layout name="General" />
+<f:section name="content">
+    <!--
+            =====================
+                    Templates/Event/SearchResult.html
+    -->
+    <f:render partial="Event/Filter"/>
+
+    <f:if condition="{search}">
+        <f:then>
+            <f:if condition="{events}">
+                <f:then>
+                    <article class="corps-list">
+                        <h3>Résultats de votre recherche</h3>
+                        <ul class="pagination">
+
+                        </ul>
+                        <ul id="events-search" class="saison-evenements">
+                            <f:for each="{events}" as="event" iteration="iterator">
+                                <f:render partial="Event/List/Item" arguments="{event: event,settings:settings,iterator:iterator}" />
+                            </f:for>
+                        </ul>
+                        <ul class="pagination">
+
+                        </ul>
+                    </article>
+
+                    <script type="text/javascript">
+                        jQuery(function($) {
+                            if (jQuery(window).width() < 990) {
+                                var items = jQuery(".event-item");
+
+                                var numItems = items.length;
+                                
+                                if (jQuery(window).width() < 767) {
+                                    var perPage = 10;
+                                }else{
+                                    var perPage = 5;
+                                }
+                                
+
+                                items.slice(perPage).hide();
+                                jQuery(".pagination").pagination({
+                                    items: numItems,
+                                    itemsOnPage: perPage,
+                                    onPageClick: function(pageNumber) {
+                                        var showFrom = perPage * (pageNumber - 1);
+                                        var showTo = showFrom + perPage;
+                                        items.hide().slice(showFrom, showTo).show();
+                                    }
+                                });
+
+                                var checkFragment = function() {
+                                    var hash = window.location.hash || "#page-1";
+                                    hash = hash.match(/^#page-(\d+)$/);
+                                    if (hash)
+                                        jQuery(".pagination").pagination("selectPage", parseInt(hash[1]));
+                                };
+
+                                jQuery(window).bind("popstate", checkFragment);
+                                checkFragment();
+                            }
+                        });
+                        
+                        require(['TYPO3/CMS/OtPortail/ItemsManagement'], function (ItemsManagement) {
+                          document.addEventListener('mapLoad', function (e) { 
+                              // Remove the listener
+                              e.target.removeEventListener(e.type, arguments.callee);
+                              var googleMap = e.detail;
+                              ItemsManagement.init(googleMap);
+                              googleMap.showItemsOntoTheMap();
+                          }, false);          
+                        });
+                      
+                        
+                    </script>          
+                </f:then>
+                <f:else>
+                    <article class="corps-list">
+                        <h5>Aucun résultat correspondant à votre recherche</h5>
+                    </article>           
+                </f:else>
+            </f:if>
+        </f:then>
+    </f:if>
+</f:section>

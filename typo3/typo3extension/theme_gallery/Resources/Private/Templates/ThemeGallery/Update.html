@@ -1,0 +1,31 @@
+<f:layout name="Default" />
+
+<f:section name="headline">
+    <h1></h1>
+</f:section>
+
+<f:section name="content">    
+    <div id="colorPickerWrapper">
+        <div class="scale h"></div>
+        <div class="scale s"></div>
+        <div class="scale l"></div>        
+    </div>
+    <f:form action="update" name="editform" id="ThemeGalleryControllerActivate">           
+        <f:if condition="{theme.name}">
+          <f:then>
+            <f:form.hidden name="themeConfig[theme][name]" value="{theme.name}" />
+          </f:then>
+        </f:if>
+        <f:if condition="{theme.colors}">
+          <f:then>
+            <f:for each="{theme.colors}" as="color" key="name" iteration="iterator">
+              <f:form.hidden name="themeConfig[theme][colors][{name}]" value="{color}" />
+            </f:for>
+          </f:then>
+        </f:if>        
+    </f:form>
+    <f:render 
+        partial="ThemeGallery/Preview"
+        arguments="{url: '{url}'}"
+    />
+</f:section>

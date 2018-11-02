@@ -1,0 +1,74 @@
+<!-- Header
+================================================== -->
+{namespace otcms=Opentalent\OtCms\ViewHelpers}
+{namespace otws=Opentalent\OtWebservice\ViewHelpers}
+
+<div class="header">
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-default navbar-top">
+    <div class="container">
+      <div class="navbar-header pull-left">
+        <f:cObject typoscriptObjectPath="lib.logo" />
+        <div class="structure-name">
+          <h1><f:cObject typoscriptObjectPath="lib.sitetitle" /></h1>
+        </div>
+      </div>
+
+      <div class="navbar-header pull-right navbar-top-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <f:security.ifAuthenticated>
+            <f:then>
+              <f:cObject typoscriptObjectPath="lib.navigationbar" />
+
+              <li>
+                <a href="javascript:{}" onclick="document.getElementById('formlogout').submit();" title="Se déconnecter"
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+                <form id="formlogout" action="/index.php?id=95144" target="_top" method="post">
+                  <input type="hidden" name="logintype" value="logout" />
+                  <input type="hidden" name="pid" value="2" />
+                </form>
+              </li>
+
+            </f:then>
+            <f:else>
+              <li class="dropdown pull-left navbar-user">
+              <f:if condition="{otws:string.StringContains(haystack:'{f:cObject(typoscriptObjectPath: \'lib.domain\')}', needle: 'opentalent.fr' )}">
+                <f:then>
+                  <f:link.page pageUid="95144">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Se connecter
+                  </f:link.page>
+                </f:then>
+                <f:else>
+                  <f:link.page pageUid="95144">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Se connecter
+                  </f:link.page>
+                </f:else>
+              </f:if>
+              </li>
+            </f:else>
+          </f:security.ifAuthenticated>
+          <f:if condition="{settings.network.logo} != ''">
+            <f:then>
+              <li>
+                <a href="{settings.network.url}" target="_blank" class="network-logo pull-right">
+                  <img src="{settings.network.logo}" alt="{settings.network.name}" />
+                </a>
+              </li>
+            </f:then>
+          </f:if>
+        </ul>
+      </div><!--/.nav-collapse -->      
+    </div>
+  </nav>
+
+  <!-- Cover Image -->
+  <div class="container">
+    <div class="row">
+      <div class="carousel slide" data-ride="carousel">
+        <f:cObject typoscriptObjectPath="lib.tx_themegallery.widgets.carousel" />    
+      </div>
+    </div>
+  </div>
+
+</div><!--/.header -->

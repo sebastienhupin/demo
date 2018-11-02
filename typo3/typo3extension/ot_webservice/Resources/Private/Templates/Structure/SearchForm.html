@@ -1,0 +1,18 @@
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Structures/SearchForm.html
+-->
+
+<f:section name="content">
+  <span class="search-title">Recherche</span>
+  <f:form object="{search}" name="search" pageUid="{settings.listPid}" additionalParams="{isSearch: 1}" noCache="1">                  
+    <div class="form-group">
+      <f:form.textfield id="structure-where" title="Renseignez une localisation (Ville, département, code postal, ...)" class="form-control" placeholder="Où ?" property="where"/>
+    </div>
+    <div class="form-group">
+      <f:form.textfield id="structure-what" title="Renseignez un nom ou une activité" class="form-control" placeholder="Quoi ?" property="what"/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Trouver</button>
+  </f:form>
+</f:section>

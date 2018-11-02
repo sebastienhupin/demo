@@ -1,0 +1,59 @@
+<f:layout name="General" />
+<!--
+        =====================
+                Templates/Event/SearchForm.html
+-->
+
+<f:section name="content">
+  <h3>Recherche</h3>
+  <f:form object="{search}" name="search" pageUid="{settings.listPid}">
+    <f:form.hidden property="structure_id" />
+    <f:form.hidden property="onChildrenOnly" />
+    <f:form.hidden property="limit" />
+    <div class="form-group">
+      <f:form.textfield id="event-where" class="form-control" placeholder="Où ?" property="where"/>
+    </div>
+    <div class="form-group">
+      <f:form.textfield id="event-when" class="form-control form-event-when" placeholder="Quand ?" property="when"/>
+    </div>
+    <div class="form-group">
+      <f:form.textfield id="event-what" class="form-control" placeholder="Quoi ?" property="what"/>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block search-form-btn">Trouver</button>
+  </f:form>
+
+  <script type="text/javascript">
+    /**
+     *  Initialisation du Calendrier pour le choix "Quand ?" du formulaire
+     */
+    jQuery(document).ready(function() {
+      // Affichage d'un calendrier sur la champs "Quand ?" du formulaire de recherche des événements
+      // Rules : any date, day, week, week-end, month
+      jQuery(".form-event-when").daterangepicker(
+              {
+                format: 'DD-MM-YYYY',
+                showDropdowns: false,
+                opens: 'right', /* left, center, right */
+                separator: ":",
+                ranges: {
+                  "Aujourd'hui": [moment()],
+                  'Cette semaine': [moment(), moment().endOf('week').add('days', 1)],
+                  'Ce week-end': [moment().endOf('week'), moment().endOf('week').add('days', 1)],
+                  'Ce mois': [moment(), moment().endOf('month')]
+                },
+                startDate: moment(),
+                minDate: moment(),
+                maxDate: moment().add('month', 3),
+                locale: {
+                  fromLabel: "Du",
+                  toLabel: 'Au',
+                  customRangeLabel: 'Période Personnalisée',
+                  applyLabel: 'Valider',
+                  cancelLabel: 'Annuler'
+                }
+              }
+      );
+    });
+  </script>
+
+</f:section>

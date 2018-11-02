@@ -1,0 +1,17 @@
+<!--
+        =====================
+                Partials/Structure/List/Item.html
+-->
+
+{namespace jsonld=Opentalent\OtWebservice\ViewHelpers\Jsonld}
+<f:alias map="{address: '{jsonld:Organization(object:structure, property: \'ADDRESS_PRINCIPAL\' )}'}">
+    <li class="structure-item corps-mev-ligne-vignette" data-id="{jsonld:Jsonld(object:structure)}" data-category="{structure.category}" data-geolocation="<![CDATA[{]]>'lat':'{address.latitude}', 'lng':'{address.longitude}'<![CDATA[}]]>">
+    <f:link.action controller="Structure" action="detail" arguments="{id: '{jsonld:Jsonld(object:structure)}'}">
+        <img class="lazy" data-original="{structure.logo}?" />
+        <h4>{structure.nam}</h4>
+        <p>{address.streetAddress}<br/>{address.streetAddressSecond}<br/>{address.streetAddressThird}</p>
+        <p>{address.postalCode} - {address.addressCity}</p>
+    </f:link.action>
+    <f:render partial="Structure/List/Infowindow" arguments="{structure:structure}"/>
+</li>
+</f:alias>  
