@@ -1,0 +1,26 @@
+        $sql = sprintf("
+      SELECT *
+     FROM Organization o
+     JOIN
+       (
+         SELECT
+                 GROUP_CONCAT(@target:=
+                     (
+                         SELECT @source:=GROUP_CONCAT(organization_target)
+                         FROM
+                             organization_parent
+                         WHERE
+                             FIND_IN_SET(organization_source, @source) AND organization_target NOT IN (32366, 13)
+                     )
+                 ) AS parents
+         FROM
+             (SELECT
+                 @source:=%d,
+                 @target:=0
+             ) vars,
+             organization_parent
+         WHERE
+             @source IS NOT NULL
+       ) tmp
+       WHERE FIND_IN_SET(o.id, parents)
+    ", (int) $id);

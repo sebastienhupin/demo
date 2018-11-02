@@ -1,0 +1,13 @@
+        $sql = sprintf("
+      SELECT *
+      FROM Organization o
+      JOIN
+        (SELECT 
+          @parents:=(
+            SELECT GROUP_CONCAT(organization_target)
+            FROM organization_parent
+            WHERE organization_source = %d
+          )
+        ) tmp
+      WHERE FIND_IN_SET(o.id, @parents)
+    ", (int) $id);
